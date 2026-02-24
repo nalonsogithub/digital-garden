@@ -1,0 +1,27 @@
+.intro {
+  margin: 0 0 2rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: var(--foreground);
+  color: var(--background);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.cta:hover {
+  opacity: 0.9;
+  text-decoration: none;
+  color: var(--background);
+}

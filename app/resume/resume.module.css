@@ -1,0 +1,54 @@
+.resume {
+  margin-bottom: 2rem;
+}
+
+.entry {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.entry:last-child {
+  border-bottom: none;
+}
+
+.entryHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.role {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.company {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.dates {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-left: auto;
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.bullet {
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+.detailLink {
+  font-size: 0.9rem;
+  font-weight: 500;
+}

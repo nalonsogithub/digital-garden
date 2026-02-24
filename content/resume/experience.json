@@ -1,0 +1,21 @@
+[
+  {
+    "role": "global strategist",
+    "company": "example firm",
+    "start": "2025",
+    "end": "present",
+    "bullets": [
+      {
+        "text": "built an ai driven investment process demo for sales enablement",
+        "link": {
+          "section": "projects",
+          "slug": "investment-process-demo",
+          "label": "view details"
+        }
+      },
+      {
+        "text": "published research on quantum computing applications in finance"
+      }
+    ]
+  }
+]

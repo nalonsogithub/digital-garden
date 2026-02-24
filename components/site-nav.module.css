@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+.home {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.link {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.link:hover {
+  color: var(--foreground);
+}
