@@ -15,4 +15,4 @@ Placeholder content. Quantum bits, superposition, and entanglement are introduce
 
 ## Applications
 
-Possible use cases include portfolio optimization and risk simulation. This document is intended as an internal reference; the PDF may be a placeholder until the final version is added to `public/papers/`.
+Possible use cases include portfolio optimization and risk simulation. You can download the full primer using the button above.
