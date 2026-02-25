@@ -1,10 +1,71 @@
+.section {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--foreground);
+  letter-spacing: -0.01em;
+}
+
+.summaryParagraph {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: 42rem;
+}
+
+.summaryBullets {
+  margin: 0 0 0.5rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.summaryBullet {
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: 42rem;
+}
+
+.introLinks {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.introLinks a {
+  font-weight: 500;
+}
+
+.printHint {
+  margin: 0 0 1.5rem;
+}
+
+.paragraph {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 42rem;
+}
+
+.sectionLink {
+  font-weight: 500;
+}
+
 .resume {
   margin-bottom: 2rem;
 }
 
 .entry {
-  margin-bottom: 2rem;
+  margin-bottom: 2.25rem;
   padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--theme-primary);
   border-bottom: 1px solid var(--border);
 }
 
@@ -22,8 +83,9 @@
 
 .role {
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 600;
+  color: var(--foreground);
 }
 
 .company {
@@ -32,9 +94,28 @@
 }
 
 .dates {
-  color: var(--muted);
+  color: var(--theme-primary-muted);
   font-size: 0.9rem;
   margin-left: auto;
+}
+
+.subsections {
+  margin-top: 0.5rem;
+}
+
+.subsection {
+  margin-bottom: 0.75rem;
+}
+
+.subsection:last-child {
+  margin-bottom: 0;
+}
+
+.subsectionTitle {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--foreground);
 }
 
 .bullets {
@@ -44,11 +125,37 @@
 }
 
 .bullet {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
   line-height: 1.5;
+  font-size: 0.9rem;
 }
 
 .detailLink {
   font-size: 0.9rem;
   font-weight: 500;
+  color: var(--theme-primary);
+}
+
+.detailLink:hover {
+  color: var(--theme-primary-hover);
+}
+
+.educationList {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: none;
+}
+
+.educationItem {
+  margin-bottom: 0.25rem;
+}
+
+.educationLink {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.educationLink:hover {
+  color: var(--theme-primary);
+  text-decoration: none;
 }

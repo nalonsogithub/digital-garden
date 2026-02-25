@@ -1,6 +1,23 @@
+/* Site-wide markdown viewer styles. Use .markdown wrapper for all rendered markdown. */
+
 .markdown {
   font-size: 1rem;
   line-height: 1.7;
+}
+
+.markdown > *:first-child {
+  margin-top: 0;
+}
+
+.markdown > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Headings */
+.markdown h1 {
+  margin: 1.75rem 0 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .markdown h2 {
@@ -15,10 +32,32 @@
   font-weight: 600;
 }
 
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Paragraphs and text */
 .markdown p {
   margin: 0 0 1rem;
 }
 
+.markdown strong {
+  font-weight: 600;
+}
+
+.markdown em {
+  font-style: italic;
+}
+
+.markdown del {
+  text-decoration: line-through;
+}
+
+/* Lists */
 .markdown ul,
 .markdown ol {
   margin: 0 0 1rem;
@@ -29,6 +68,17 @@
   margin-bottom: 0.35rem;
 }
 
+.markdown li > ul,
+.markdown li > ol {
+  margin: 0.35rem 0 0;
+}
+
+/* Task lists (GFM) */
+.markdown input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Links */
 .markdown a {
   color: var(--link);
 }
@@ -37,6 +87,7 @@
   text-decoration: underline;
 }
 
+/* Code */
 .markdown code {
   font-size: 0.9em;
   padding: 0.15rem 0.4rem;
@@ -56,11 +107,72 @@
 .markdown pre code {
   padding: 0;
   background: none;
+  font-size: inherit;
 }
 
+/* Blockquote */
 .markdown blockquote {
   margin: 0 0 1rem;
   padding-left: 1rem;
   border-left: 3px solid var(--border);
+  color: var(--muted);
+}
+
+.markdown blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Horizontal rule */
+.markdown hr {
+  margin: 1.5rem 0;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+/* Tables (GFM) */
+.markdown table {
+  width: 100%;
+  margin: 0 0 1rem;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.markdown th,
+.markdown td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.markdown th {
+  font-weight: 600;
+  background: var(--border);
+}
+
+.markdown tr:nth-child(even) td {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+  .markdown tr:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.04);
+  }
+}
+
+/* Images */
+.markdown img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.markdown figure {
+  margin: 1rem 0;
+}
+
+.markdown figcaption {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
   color: var(--muted);
 }

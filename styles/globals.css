@@ -1,10 +1,24 @@
+/* ==========================================================================
+   Digital Garden — Global theme
+   Use these variables everywhere for consistency. See docs/theme.md.
+   ========================================================================== */
+
 :root {
+  /* Base */
   --background: #ffffff;
   --foreground: #171717;
   --muted: #525252;
   --border: #e5e5e5;
-  --link: #2563eb;
-  --link-hover: #1d4ed8;
+
+  /* Theme: mid blue (not too dark, not too light; low distraction) */
+  --theme-primary: #2563eb;
+  --theme-primary-hover: #1d4ed8;
+  --theme-primary-subtle: #eff6ff;   /* Very light blue for optional backgrounds */
+  --theme-primary-muted: #3b82f6;    /* Slightly lighter for secondary emphasis */
+
+  /* Semantic aliases — use these in components */
+  --link: var(--theme-primary);
+  --link-hover: var(--theme-primary-hover);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,8 +27,14 @@
     --foreground: #ededed;
     --muted: #a3a3a3;
     --border: #262626;
-    --link: #60a5fa;
-    --link-hover: #93c5fd;
+
+    --theme-primary: #60a5fa;
+    --theme-primary-hover: #93c5fd;
+    --theme-primary-subtle: #1e3a5f;
+    --theme-primary-muted: #38bdf8;
+
+    --link: var(--theme-primary);
+    --link-hover: var(--theme-primary-hover);
   }
 }
 
@@ -40,4 +60,9 @@ a {
 a:hover {
   color: var(--link-hover);
   text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--theme-primary);
+  outline-offset: 2px;
 }

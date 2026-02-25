@@ -7,13 +7,13 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const slugs = getContentSlugs("projects");
+  const slugs = getContentSlugs("systems");
   return slugs.map((slug) => ({ slug }));
 }
 
-export default async function ProjectDetailPage({ params }: PageProps) {
+export default async function SystemDetailPage({ params }: PageProps) {
   const { slug } = await params;
-  const item = getContentBySlug("projects", slug);
+  const item = getContentBySlug("systems", slug);
   if (!item) notFound();
-  return <ContentDetail section="projects" slug={slug} item={item} />;
+  return <ContentDetail section="systems" slug={slug} item={item} />;
 }

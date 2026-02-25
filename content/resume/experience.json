@@ -1,21 +1,90 @@
 [
   {
-    "role": "global strategist",
-    "company": "example firm",
+    "sectionTitle": "Current Role — Global Strategist",
+    "role": "Global Strategist",
+    "company": "PanAgora Asset Management",
     "start": "2025",
     "end": "present",
-    "bullets": [
+    "bullets": [],
+    "subsections": [
       {
-        "text": "built an ai driven investment process demo for sales enablement",
-        "link": {
-          "section": "projects",
-          "slug": "investment-process-demo",
-          "label": "view details"
-        }
+        "title": "Client & Market Interface",
+        "bullets": [
+          { "text": "Participated in ~30 client and prospect meetings within first four months in role." },
+          { "text": "Lead introductory strategy presentations; coordinate deeper technical follow-up with portfolio managers." },
+          { "text": "Present to consultants and institutional audiences." },
+          { "text": "Deliver two guest lectures per semester at Duke University; prior academic presentations at MIT and Oxford." }
+        ]
       },
       {
-        "text": "published research on quantum computing applications in finance"
+        "title": "AI-Enabled Systems Architecture",
+        "bullets": [
+          {
+            "text": "Sole architect and developer of two institutional AI-enabled platforms: Investment Process Demo (model transparency and portfolio traceability); Sales AI Platform (market analysis engine, agentic commentary generator, competitive intelligence framework).",
+            "link": { "section": "systems", "slug": "investment-process-demo", "label": "view details" }
+          },
+          {
+            "text": "Designed structured agent-based workflows integrating LLM capabilities into research and sales processes.",
+            "link": { "section": "systems", "slug": "sales-ai-platform", "label": "view details" }
+          }
+        ]
+      },
+      {
+        "title": "Research & Communication Infrastructure",
+        "bullets": [
+          { "text": "Authored or significantly contributed to 15+ client-facing research memoranda since November." },
+          { "text": "Increased outward-facing research cadence; improved speed and consistency of client responses." },
+          { "text": "Designed systems to standardize prior messaging and improve communication accuracy." }
+        ]
+      },
+      {
+        "title": "Commercial & Organizational Impact",
+        "bullets": [
+          { "text": "Systems deployed during period of $9B+ net new firm asset growth." },
+          { "text": "Developed internal metrics to track meeting progression and second-meeting conversion; directional improvement relative to historical norms." },
+          { "text": "Cross-functional integration spanning research, portfolio management, sales, and IT infrastructure." }
+        ]
       }
+    ]
+  },
+  {
+    "sectionTitle": "Quantitative Research & Portfolio Management",
+    "role": "portfolio manager",
+    "company": "Prior firm",
+    "start": "2011",
+    "end": "2024",
+    "bullets": [],
+    "subsections": [
+      {
+        "title": "Research Architecture",
+        "bullets": [
+          { "text": "Led research, portfolio architecture, and commercialization across multi-asset and equity strategies." },
+          { "text": "Designed scalable stock-level risk parity framework incorporating multidimensional risk allocation constraints; reduced portfolio construction runtime from hours to seconds.", "link": { "section": "research", "slug": "stock-level-risk-parity-architecture", "label": "technical detail" } },
+          { "text": "Architected Defensive Growth strategy: long-only, non-levered equity framework delivering low-volatility efficiency at market-level risk.", "link": { "section": "research", "slug": "defensive-growth-architecture", "label": "research detail" } },
+          { "text": "Published 9 external research papers and 100+ internal research memoranda." }
+        ]
+      },
+      {
+        "title": "Capital & Mandates",
+        "bullets": [
+          { "text": "Raised $700M+ independently across defensive equity and defensive growth strategies." },
+          { "text": "Managed multi-billion-dollar equity mandates within broader multi-asset platforms." },
+          { "text": "Contributed to platform growth reaching tens of billions in AUM during expansion phase." }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionTitle": "Software & Systems Architecture Leadership",
+    "role": "Founder & Chief Technology Officer",
+    "company": "EN Technologies",
+    "start": "—",
+    "end": "—",
+    "bullets": [
+      { "text": "Directed enterprise systems architecture and development teams (30+ direct reports) across distributed, middleware-driven platforms." },
+      { "text": "Designed distributed inventory intelligence framework for large retail network operating under intermittent connectivity constraints." },
+      { "text": "Implemented scalable document digitization and retrieval systems for financial and insurance institutions." },
+      { "text": "Contributed to certification design and technical standards for enterprise imaging middleware; integrated disconnected systems into cohesive enterprise workflows." }
     ]
   }
 ]

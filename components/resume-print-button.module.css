@@ -1,0 +1,27 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--theme-primary);
+  background: transparent;
+  border: 1px solid var(--theme-primary);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--theme-primary-subtle);
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+@media print {
+  .button {
+    display: none;
+  }
+}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ContentItem, ContentSection } from "@/lib/content";
 import { MarkdownRenderer } from "@/components/markdown-renderer";
+import { DownloadIcon, ExternalIcon } from "@/components/icons";
 import styles from "@/app/content-detail.module.css";
 
 interface ContentDetailProps {
@@ -33,6 +34,7 @@ export function ContentDetail({ section, slug, item }: ContentDetailProps) {
           {frontmatter.pdf && (
             <span className={styles.actionBlock}>
               <Link href={frontmatter.pdf} className={styles.primaryButton} download>
+                <DownloadIcon size={16} className={styles.buttonIcon} />
                 download pdf
               </Link>
               <span className={styles.note}>
@@ -47,7 +49,8 @@ export function ContentDetail({ section, slug, item }: ContentDetailProps) {
               rel="noopener noreferrer"
               className={styles.secondaryButton}
             >
-              view published version ↗
+              <ExternalIcon size={16} className={styles.buttonIcon} />
+              view published version
             </a>
           )}
         </div>

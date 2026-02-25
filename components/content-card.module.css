@@ -1,9 +1,16 @@
 .card {
-  padding: 1.25rem;
+  padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
   border: 1px solid var(--border);
+  border-left: 3px solid var(--theme-primary);
   border-radius: 6px;
-  margin-bottom: 1rem;
   background: var(--background);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  border-left-color: var(--theme-primary-hover);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
 }
 
 .cardTitle {
@@ -12,7 +19,12 @@
   font-weight: 600;
 }
 
+.cardTitle a {
+  color: var(--theme-primary);
+}
+
 .cardTitle a:hover {
+  color: var(--theme-primary-hover);
   text-decoration: underline;
 }
 
@@ -41,9 +53,9 @@
 
 .tag {
   font-size: 0.8rem;
-  color: var(--muted);
-  background: var(--border);
-  padding: 0.2rem 0.5rem;
+  color: var(--theme-primary);
+  background: var(--theme-primary-subtle);
+  padding: 0.25rem 0.5rem;
   border-radius: 4px;
 }
 
@@ -56,12 +68,25 @@
 
 .detailLink {
   font-weight: 500;
+  color: var(--theme-primary);
+}
+
+.detailLink:hover {
+  color: var(--theme-primary-hover);
 }
 
 .externalLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   color: var(--muted);
 }
 
 .externalLink:hover {
-  color: var(--link);
+  color: var(--theme-primary);
+}
+
+.externalIcon {
+  flex-shrink: 0;
+  color: currentColor;
 }

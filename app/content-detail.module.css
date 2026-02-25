@@ -43,9 +43,11 @@
 }
 
 .primaryButton {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   padding: 0.5rem 1rem;
-  background: var(--foreground);
+  background: var(--theme-primary);
   color: var(--background);
   border-radius: 6px;
   font-weight: 500;
@@ -53,13 +55,15 @@
 }
 
 .primaryButton:hover {
-  opacity: 0.9;
+  background: var(--theme-primary-hover);
   color: var(--background);
   text-decoration: none;
 }
 
 .secondaryButton {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   padding: 0.5rem 1rem;
   border: 1px solid var(--border);
   border-radius: 6px;
@@ -68,7 +72,13 @@
 
 .secondaryButton:hover {
   text-decoration: none;
-  border-color: var(--foreground);
+  border-color: var(--theme-primary);
+  color: var(--theme-primary);
+}
+
+.buttonIcon {
+  flex-shrink: 0;
+  color: currentColor;
 }
 
 .actionBlock {

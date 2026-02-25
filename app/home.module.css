@@ -1,3 +1,13 @@
+.workInProgress {
+  margin: 0 0 1rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  background: var(--theme-primary-subtle);
+  border-radius: 6px;
+  border-left: 3px solid var(--theme-primary);
+}
+
 .intro {
   margin: 0 0 2rem;
   color: var(--muted);
@@ -11,9 +21,11 @@
 }
 
 .cta {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   padding: 0.6rem 1.2rem;
-  background: var(--foreground);
+  background: var(--theme-primary);
   color: var(--background);
   border-radius: 6px;
   font-weight: 500;
@@ -21,7 +33,12 @@
 }
 
 .cta:hover {
-  opacity: 0.9;
+  background: var(--theme-primary-hover);
   text-decoration: none;
   color: var(--background);
+}
+
+.ctaIcon {
+  flex-shrink: 0;
+  color: currentColor;
 }

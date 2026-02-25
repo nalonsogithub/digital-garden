@@ -1,16 +1,37 @@
 .header {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 2px solid var(--theme-primary);
 }
 
 .title {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.35rem;
   font-size: 1.75rem;
   font-weight: 600;
   letter-spacing: -0.02em;
+  color: var(--foreground);
+}
+
+.byline {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+@media print {
+  .byline {
+    white-space: nowrap;
+  }
 }
 
 .description {
   margin: 0;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
 }

@@ -1,9 +1,10 @@
 import Link from "next/link";
 import type { ContentFrontmatter } from "@/lib/content";
+import { ExternalIcon } from "@/components/icons";
 import styles from "./content-card.module.css";
 
 interface ContentCardProps {
-  section: "projects" | "research" | "writing";
+  section: "systems" | "research" | "writing" | "technical-lineage";
   slug: string;
   frontmatter: ContentFrontmatter;
 }
@@ -42,7 +43,8 @@ export function ContentCard({ section, slug, frontmatter }: ContentCardProps) {
             className={styles.externalLink}
             aria-label="Open external link"
           >
-            external link ↗
+            <ExternalIcon size={16} className={styles.externalIcon} />
+            external link
           </a>
         )}
       </div>
