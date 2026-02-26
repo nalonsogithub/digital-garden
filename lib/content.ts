@@ -6,6 +6,9 @@ const contentDir = path.join(process.cwd(), "content");
 
 export type ContentSection = "systems" | "research" | "writing" | "technical-lineage";
 
+/** For writing items: "professional" = finance publications & capability narratives; "personal" = quantum primer, essays, etc. */
+export type WritingCategory = "professional" | "personal";
+
 export interface ContentFrontmatter {
   title: string;
   summary: string;
@@ -13,6 +16,8 @@ export interface ContentFrontmatter {
   pdf?: string;
   external_url?: string;
   tags?: string[];
+  /** Writing only: show under Professional vs Personal on the Writing index. Default "professional". */
+  category?: WritingCategory;
 }
 
 export interface ContentItem {
@@ -76,6 +81,10 @@ export interface ResumeSubsection {
 
 export interface ResumeEntry {
   sectionTitle?: string;
+  /** When set, show company-level date range (e.g. "2010 — present") for first role at company. */
+  companyDates?: string;
+  /** When true, do not show section title; render as nested role under previous company. */
+  continueCompany?: boolean;
   role: string;
   company: string;
   start: string;
@@ -123,11 +132,35 @@ export function getResumeExecutiveSummary(): string[] {
     .filter((line) => line.length > 0);
 }
 
+export interface ResumeContact {
+  name: string;
+  email: string;
+  linkedin: string;
+  phone: string;
+}
+
+export function getResumeContact(): ResumeContact | null {
+  const filePath = path.join(contentDir, "resume", "contact.json");
+  if (!fs.existsSync(filePath)) return null;
+  const raw = fs.readFileSync(filePath, "utf-8");
+  const data = JSON.parse(raw) as ResumeContact;
+  return data.name && data.email ? data : null;
+}
+
 export function getResumePortfolioExperience(): string | null {
   const filePath = path.join(contentDir, "resume", "portfolio-experience.txt");
   if (!fs.existsSync(filePath)) return null;
   const raw = fs.readFileSync(filePath, "utf-8").trim();
   return raw.length > 0 ? raw : null;
+}
+
+/** Technology & Systems Leverage bullets (architectural breadth). */
+export function getResumeTechnologyLeverage(): string[] {
+  const filePath = path.join(contentDir, "resume", "technology-systems-leverage.json");
+  if (!fs.existsSync(filePath)) return [];
+  const raw = fs.readFileSync(filePath, "utf-8");
+  const data = JSON.parse(raw) as string[];
+  return Array.isArray(data) ? data : [];
 }
 
 const pagesDir = path.join(process.cwd(), "content", "pages");

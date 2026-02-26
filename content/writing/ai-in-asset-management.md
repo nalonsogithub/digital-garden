@@ -5,6 +5,7 @@ summary: "Short summary for list views: how AI is changing research and executio
 pdf: ""
 external_url: "https://example.com/ai-in-asset-management"
 tags: ["ai", "asset-management", "writing"]
+category: personal
 ---
 
 Body text: an overview of how AI is being used in research, risk, and execution within asset management.

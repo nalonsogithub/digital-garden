@@ -12,6 +12,11 @@
   color: var(--foreground);
 }
 
+.titleHero {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 .byline {
   margin: 0 0 0.5rem;
   font-size: 0.95rem;
@@ -23,8 +28,25 @@
   line-height: 1.4;
 }
 
+.bylineSecondary {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.bylineFirst {
+  font-weight: 600;
+  color: var(--foreground);
+}
+
 @media print {
-  .byline {
+  .byline,
+  .bylineSecondary {
     white-space: nowrap;
   }
 }

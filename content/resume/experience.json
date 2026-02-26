@@ -1,85 +1,51 @@
 [
   {
-    "sectionTitle": "Current Role — Global Strategist",
-    "role": "Global Strategist",
-    "company": "PanAgora Asset Management",
+    "sectionTitle": "PanAgora Asset Management",
+    "companyDates": "2010 — present",
+    "role": "Director | Global Strategist",
+    "company": "",
     "start": "2025",
     "end": "present",
     "bullets": [],
     "subsections": [
-      {
-        "title": "Client & Market Interface",
-        "bullets": [
-          { "text": "Participated in ~30 client and prospect meetings within first four months in role." },
-          { "text": "Lead introductory strategy presentations; coordinate deeper technical follow-up with portfolio managers." },
-          { "text": "Present to consultants and institutional audiences." },
-          { "text": "Deliver two guest lectures per semester at Duke University; prior academic presentations at MIT and Oxford." }
-        ]
-      },
-      {
-        "title": "AI-Enabled Systems Architecture",
-        "bullets": [
-          {
-            "text": "Sole architect and developer of two institutional AI-enabled platforms: Investment Process Demo (model transparency and portfolio traceability); Sales AI Platform (market analysis engine, agentic commentary generator, competitive intelligence framework).",
-            "link": { "section": "systems", "slug": "investment-process-demo", "label": "view details" }
-          },
-          {
-            "text": "Designed structured agent-based workflows integrating LLM capabilities into research and sales processes.",
-            "link": { "section": "systems", "slug": "sales-ai-platform", "label": "view details" }
-          }
-        ]
-      },
-      {
-        "title": "Research & Communication Infrastructure",
-        "bullets": [
-          { "text": "Authored or significantly contributed to 15+ client-facing research memoranda since November." },
-          { "text": "Increased outward-facing research cadence; improved speed and consistency of client responses." },
-          { "text": "Designed systems to standardize prior messaging and improve communication accuracy." }
-        ]
-      },
-      {
-        "title": "Commercial & Organizational Impact",
-        "bullets": [
-          { "text": "Systems deployed during period of $9B+ net new firm asset growth." },
-          { "text": "Developed internal metrics to track meeting progression and second-meeting conversion; directional improvement relative to historical norms." },
-          { "text": "Cross-functional integration spanning research, portfolio management, sales, and IT infrastructure." }
-        ]
-      }
+      { "title": "AI-Enabled Strategy & Systems Architecture", "bullets": [{ "text": "Sole architect and developer of two institutional AI-enabled platforms: Investment Process Demo (model transparency and portfolio traceability); Sales AI Platform (market analysis engine, agentic commentary generator, competitive intelligence framework).", "link": { "section": "systems", "slug": "investment-process-demo", "label": "view details" } }, { "text": "Designed structured agent-based workflows integrating LLM capabilities into research and sales processes.", "link": { "section": "systems", "slug": "sales-ai-platform", "label": "view details" } }] },
+      { "title": "Client & Market Interface", "bullets": [{ "text": "Participated in ~30 client and prospect meetings within first four months in role." }, { "text": "Lead introductory strategy presentations; coordinate deeper technical follow-up with portfolio managers." }, { "text": "Present to consultants and institutional audiences." }, { "text": "Deliver two guest lectures per semester at Duke University; prior academic presentations at MIT and Oxford." }] },
+      { "title": "Research & Communication Architecture", "bullets": [{ "text": "Authored or significantly contributed to 15+ client-facing research memoranda since November." }, { "text": "Increased outward-facing research cadence; improved speed and consistency of client responses." }, { "text": "Designed systems to standardize prior messaging and improve communication accuracy." }] },
+      { "title": "Commercial & Organizational Impact", "bullets": [{ "text": "Systems deployed during period of $9B+ net new firm asset growth." }, { "text": "Developed internal metrics to track meeting progression and second-meeting conversion; directional improvement relative to historical norms." }, { "text": "Cross-functional integration spanning research, portfolio management, sales, and IT infrastructure." }] }
     ]
   },
   {
-    "sectionTitle": "Quantitative Research & Portfolio Management",
-    "role": "portfolio manager",
-    "company": "Prior firm",
-    "start": "2011",
+    "continueCompany": true,
+    "role": "Quantitative Research & Portfolio Manager",
+    "company": "",
+    "start": "2010",
     "end": "2024",
     "bullets": [],
     "subsections": [
-      {
-        "title": "Research Architecture",
-        "bullets": [
-          { "text": "Led research, portfolio architecture, and commercialization across multi-asset and equity strategies." },
-          { "text": "Designed scalable stock-level risk parity framework incorporating multidimensional risk allocation constraints; reduced portfolio construction runtime from hours to seconds.", "link": { "section": "research", "slug": "stock-level-risk-parity-architecture", "label": "technical detail" } },
-          { "text": "Architected Defensive Growth strategy: long-only, non-levered equity framework delivering low-volatility efficiency at market-level risk.", "link": { "section": "research", "slug": "defensive-growth-architecture", "label": "research detail" } },
-          { "text": "Published 9 external research papers and 100+ internal research memoranda." }
-        ]
-      },
-      {
-        "title": "Capital & Mandates",
-        "bullets": [
-          { "text": "Raised $700M+ independently across defensive equity and defensive growth strategies." },
-          { "text": "Managed multi-billion-dollar equity mandates within broader multi-asset platforms." },
-          { "text": "Contributed to platform growth reaching tens of billions in AUM during expansion phase." }
-        ]
-      }
+      { "title": "Leadership & Scope", "bullets": [{ "text": "Led quantitative research and portfolio management across commodities, multi-asset, and global equity strategies. Initially appointed to lead the active commodity sleeve within the multi-asset platform, later transitioned to oversee equity allocation and portfolio construction within multi-asset mandates. Managed up to $8B in multi-asset portfolios at peak and contributed to broader platform growth reaching tens of billions in AUM during expansion phase." }] },
+      { "title": "Research & Portfolio Architecture", "bullets": [{ "text": "Designed scalable stock-level risk parity framework incorporating multidimensional risk allocation constraints; reduced portfolio construction runtime from hours to seconds, materially expanding research and backtesting capability.", "link": { "section": "writing", "slug": "stock-level-risk-parity", "label": "technical detail" } }, { "text": "Architected Defensive Equity platform spanning U.S., International, Small Cap, and Emerging Markets strategies; long-only, low-volatility framework delivering competitive downside protection across cycles.", "link": { "section": "writing", "slug": "defensive-equity-platform", "label": "research detail" } }, { "text": "Designed and launched Defensive Growth suite in 2019, integrating low-volatility efficiency with tailored beta allocation to achieve market-level risk without leverage.", "link": { "section": "writing", "slug": "defensive-growth-architecture", "label": "defensive growth detail" } }, { "text": "Transitioned framework to incorporate bottom-up stock selection via flagship alpha platform, increasing tracking error above 4% while preserving risk architecture.", "link": { "section": "writing", "slug": "defensive-growth-evolution", "label": "strategy evolution detail" } }, { "text": "Published 9 external research papers and 100+ internal research memoranda." }] },
+      { "title": "Capital & Commercialization", "bullets": [{ "text": "Raised $700M+ independently across defensive equity and defensive growth strategies." }, { "text": "Led commercialization efforts including client presentations, consultant engagement, and strategy positioning." }, { "text": "Defensive Growth example: International strategy outperformed benchmark by ~5% in 2025.", "link": { "section": "writing", "slug": "performance-attribution-case-study", "label": "performance detail" } }] }
     ]
+  },
+  {
+    "sectionTitle": "Mellon Capital Asset Management",
+    "role": "Quantitative Research Analyst | Long-Short Small Cap",
+    "company": "",
+    "start": "2007",
+    "end": "2010",
+    "bullets": [
+      { "text": "Developed quantitative factors and portfolio construction enhancements within a ~$400M U.S. small-cap long-short strategy." },
+      { "text": "Designed portfolio optimization constraint to maximize differentiation from common institutional factor exposures using fund holdings data, factor crowding metrics, and market microstructure intelligence." },
+      { "text": "This architecture materially reduced unintended beta exposure during systemic stress. In 2008, while most long-only and long-short portfolios experienced significant drawdowns, the strategy delivered approximately flat performance, ranking at the top of its peer group.", "link": { "section": "writing", "slug": "mellon-capital-long-short-architecture", "label": "research detail" } }
+    ],
+    "subsections": []
   },
   {
     "sectionTitle": "Software & Systems Architecture Leadership",
     "role": "Founder & Chief Technology Officer",
     "company": "EN Technologies",
-    "start": "—",
-    "end": "—",
+    "start": "2000",
+    "end": "2005",
     "bullets": [
       { "text": "Directed enterprise systems architecture and development teams (30+ direct reports) across distributed, middleware-driven platforms." },
       { "text": "Designed distributed inventory intelligence framework for large retail network operating under intermittent connectivity constraints." },

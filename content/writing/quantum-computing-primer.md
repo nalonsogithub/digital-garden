@@ -1,10 +1,11 @@
 ---
 title: "quantum computing primer"
 date: "2025-01-01"
-summary: "Short summary for list views: introduction to quantum computing concepts and potential finance applications."
+summary: "Introduction to quantum computing concepts and potential finance applications."
 pdf: "/papers/quantum_computing_primer.pdf"
 external_url: ""
-tags: ["quantum", "research"]
+tags: ["quantum", "finance", "writing"]
+category: personal
 ---
 
 Body text: a brief primer on quantum computing concepts and where they might apply in finance and optimization.

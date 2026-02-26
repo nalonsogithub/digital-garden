@@ -21,10 +21,11 @@ This document describes the structure of the **digital-garden** site: a Next.js 
 | `/resume` | Resume page (centerpiece): experience from JSON with optional deep links to detail pages |
 | `/systems` | Index of all systems (from Markdown in `content/systems/`) |
 | `/systems/[slug]` | Single system detail page (e.g. `/systems/investment-process-demo`) |
-| `/research` | Index of all research items (from Markdown in `content/research/`) |
-| `/research/[slug]` | Single research detail page (e.g. `/research/quantum-computing-primer`) |
-| `/writing` | Index of all writing items (from Markdown in `content/writing/`) |
-| `/writing/[slug]` | Single writing detail page (e.g. `/writing/ai-in-asset-management`) |
+| `/writing` | Index of all writing (from Markdown in `content/writing/`), with **Professional** and **Personal** subsections |
+| `/writing/[slug]` | Single writing detail page (e.g. `/writing/quantum-computing-primer`) |
+| `/cross-vertical-strategy` | Meta-identity page: cross-vertical leverage, integrator model (from `content/pages/cross-vertical-strategy.md`) |
+
+**Redirects:** `/research` and `/research/[slug]` permanently redirect to `/writing` and `/writing/[slug]`.
 
 The **slug** in `[slug]` is the Markdown filename without the `.md` extension. Slugs must be **lowercase letters, numbers, and hyphens only** (e.g. `quantum-computing-primer`). The site only discovers files whose base name matches that pattern.
 
@@ -46,17 +47,13 @@ digital-garden/
 │   │   ├── page.tsx              # /systems index
 │   │   └── [slug]/
 │   │       └── page.tsx         # /systems/[slug]
-│   ├── research/
-│   │   ├── page.tsx              # /research index
-│   │   └── [slug]/
-│   │       └── page.tsx         # /research/[slug]
 │   └── writing/
 │       ├── page.tsx              # /writing index
 │       └── [slug]/
 │           └── page.tsx         # /writing/[slug]
 │
 ├── components/
-│   ├── site-nav.tsx              # Top nav: home, resume, systems, research, writing (with active-state highlighting)
+│   ├── site-nav.tsx              # Top nav: home, resume, systems, writing (with active-state highlighting)
 │   ├── site-nav.module.css
 │   ├── page-header.tsx           # Section title + optional description
 │   ├── page-header.module.css
@@ -71,9 +68,7 @@ digital-garden/
 │   │   └── experience.json       # Resume entries and bullets (see below)
 │   ├── systems/                  # One .md file per system
 │   │   └── *.md
-│   ├── research/                 # One .md file per research item
-│   │   └── *.md
-│   └── writing/                  # One .md file per writing item
+│   └── writing/                  # One .md file per writing item (professional + personal)
 │       └── *.md
 │
 ├── lib/
@@ -94,7 +89,7 @@ digital-garden/
 
 ## 4. Content formats
 
-### 4.1 Markdown content (systems, research, writing)
+### 4.1 Markdown content (systems, writing)
 
 Each item is a single **Markdown file** in the right section folder. The **slug** is the filename without `.md` (e.g. `quantum-computing-primer.md` → slug `quantum-computing-primer`). Only filenames that are valid slugs (lowercase, digits, hyphens) are picked up.
 
@@ -109,6 +104,7 @@ Each item is a single **Markdown file** in the right section folder. The **slug*
 - `pdf` (string) — Path to a downloadable PDF, e.g. `"/papers/quantum_computing_primer.pdf"`. Files live in `public/papers/`; the detail page shows a “download pdf” button.
 - `external_url` (string) — URL of a published version elsewhere; the detail page shows a “view published version” link.
 - `tags` (array of strings) — Shown on cards and on the detail page.
+- **Writing only:** `category` (string) — `"professional"` or `"personal"`. Controls whether the item appears under **Professional** (enlisted publications and research narratives) or **Personal** (e.g. quantum primer, other essays) on the Writing index. Defaults to `professional` if omitted.
 
 **Example:**
 
@@ -145,7 +141,7 @@ Each **bullet** has:
 
 - `text` (string) — The bullet text.
 - `link` (optional object) — Deep link to a detail page:
-  - `section`: `"systems"` | `"research"` | `"writing"`
+  - `section`: `"systems"` | `"writing"` | `"technical-lineage"`
   - `slug`: slug of the target item (must match a `.md` filename in that section)
   - `label`: link text (e.g. `"view details"`)
 
@@ -181,10 +177,10 @@ Resume bullets that have a `link` show the text plus a small link to `/{section}
 
 ## 5. How pages use content
 
-- **Home (`/`)**: Static intro and links to `/resume`, `/systems`, `/research`, `/writing`.
+- **Home (`/`)**: Static intro and links to `/resume`, `/systems`, `/writing`.
 - **Resume (`/resume`)**: Reads `content/resume/experience.json` via `getResumeExperience()`; renders each entry and bullet; bullets with `link` get a link to `/{section}/{slug}`.
-- **Index pages (`/systems`, `/research`, `/writing`)**: Call `getAllContent(section)`, which returns all valid `.md` items in that section, sorted by `date` descending. Each item is rendered as a **content card** (title, summary, date, tags, “view details” link, and optional “external link” if `external_url` is set).
-- **Detail pages (`/systems/[slug]`, etc.)**: Call `getContentBySlug(section, slug)`. They render:
+- **Index pages (`/systems`, `/writing`)**: Systems calls `getAllContent("systems")`. Writing calls `getAllContent("writing")` and groups items by `category` into **Professional** and **Personal** subsections. Each item is rendered as a **content card** (title, summary, date, tags, “view details” link, and optional “external link” if `external_url` is set).
+- **Detail pages (`/systems/[slug]`, `/writing/[slug]`, etc.)**: Call `getContentBySlug(section, slug)`. They render:
   - Title (from frontmatter)
   - Date and tags
   - “Download PDF” button if `pdf` is set (and a note about placeholder)
@@ -220,7 +216,7 @@ Frontmatter is parsed with **gray-matter**. A file is considered invalid for lis
 - **Kebab-case**: All URLs, folder names, and content slugs use lowercase with hyphens (e.g. `ai-in-asset-management`, not `ai_in_asset_management` for the slug). PDF filenames in `public/papers/` can use underscores if desired (e.g. `quantum_computing_primer.pdf`); the frontmatter `pdf` value must match the path.
 - **No proprietary/confidential content**: Use placeholder or safe content only.
 - **One piece of content per file**: One project/research/writing item per Markdown file; the slug is the filename stem.
-- **Deep links**: Resume bullets can link only to existing slugs under `systems`, `research`, or `writing`. Broken links will 404.
+- **Deep links**: Resume bullets can link only to existing slugs under `systems`, `writing`, or `technical-lineage`. Broken links will 404.
 
 ---
 
@@ -228,9 +224,10 @@ Frontmatter is parsed with **gray-matter**. A file is considered invalid for lis
 
 When generating or recommending content:
 
-1. **New system/research/writing item**: Add a new `.md` file in `content/systems/`, `content/research/`, or `content/writing/` with a kebab-case filename (e.g. `my-new-system.md`). Include required frontmatter (`title`, `summary`) and optional fields (`date`, `pdf`, `external_url`, `tags`) and a Markdown body.
-2. **Resume update**: Edit `content/resume/experience.json`. Use `link.slug` values that match existing Markdown filenames (without `.md`) in the given `section`.
-3. **New PDF**: Add the file to `public/papers/` and set `pdf: "/papers/your-file.pdf"` in the relevant Markdown frontmatter.
+1. **New system item**: Add a new `.md` file in `content/systems/` with a kebab-case filename. Include required frontmatter (`title`, `summary`) and optional fields (`date`, `pdf`, `external_url`, `tags`) and a Markdown body.
+2. **New writing item**: Add a new `.md` file in `content/writing/` with a kebab-case filename. Include required frontmatter (`title`, `summary`) and optional fields (`date`, `pdf`, `external_url`, `tags`, `category`). Use `category: professional` for finance publications and research narratives, `category: personal` for other essays (e.g. quantum primer).
+3. **Resume update**: Edit `content/resume/experience.json`. Use `link.section` `"writing"` (or `"systems"`, `"technical-lineage"`) and `link.slug` values that match existing Markdown filenames (without `.md`) in that section.
+4. **New PDF**: Add the file to `public/papers/` and set `pdf: "/papers/your-file.pdf"` in the relevant Markdown frontmatter.
 
 If you suggest **structural changes** (e.g. new sections, different frontmatter fields, different URL patterns, or new content types), please describe them in terms of:
 

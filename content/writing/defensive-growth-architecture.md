@@ -3,6 +3,7 @@ title: "defensive growth architecture"
 date: "2013"
 summary: "Research-driven solution to deliver low-volatility efficiency at market-level risk without leverage."
 tags: ["portfolio construction", "low volatility", "risk allocation"]
+category: professional
 ---
 
 ## Structural Problem

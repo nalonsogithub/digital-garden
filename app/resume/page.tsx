@@ -3,7 +3,8 @@ import {
   getResumeExperience,
   getResumeEducation,
   getResumeIntro,
-  getResumePortfolioExperience,
+  getResumeContact,
+  getResumeTechnologyLeverage,
 } from "@/lib/content";
 import { PageHeader } from "@/components/page-header";
 import { ResumePrintButton } from "@/components/resume-print-button";
@@ -12,14 +13,15 @@ import styles from "./resume.module.css";
 export default function ResumePage() {
   const intro = getResumeIntro();
   const experience = getResumeExperience();
-  const portfolioExperience = getResumePortfolioExperience();
+  const technologyLeverage = getResumeTechnologyLeverage();
   const education = getResumeEducation();
+  const contact = getResumeContact();
 
   return (
     <main>
       <PageHeader
-        title="Resume"
-        byline="Global Strategist | Quantitative Portfolio Manager | AI Systems Architect"
+        title="Director | Global Strategist"
+        byline="Institutional Client Engagement | Quantitative Research & Portfolio Management | AI Systems Architect"
         description="Professional experience with links to detailed work."
       />
       <p className={styles.printHint}>
@@ -44,12 +46,17 @@ export default function ResumePage() {
         <section className={styles.resume} aria-label="Current role">
           {experience.map((entry, i) => (
             <div key={i} className={styles.entry}>
-              {entry.sectionTitle && (
-                <h2 className={styles.sectionTitle}>{entry.sectionTitle}</h2>
+              {entry.sectionTitle && !entry.continueCompany && (
+                <h2 className={i === 0 ? styles.sectionTitlePrimary : styles.sectionTitle}>{entry.sectionTitle}</h2>
+              )}
+              {entry.companyDates && (
+                <p className={styles.companyDates}>{entry.companyDates}</p>
               )}
               <div className={styles.entryHeader}>
                 <h3 className={styles.role}>{entry.role}</h3>
-                <span className={styles.company}>{entry.company}</span>
+                {!entry.continueCompany && entry.company && (
+                  <span className={styles.company}>{entry.company}</span>
+                )}
                 <span className={styles.dates}>
                   {entry.start} — {entry.end}
                 </span>
@@ -105,11 +112,20 @@ export default function ResumePage() {
         </section>
       )}
 
-      {/* Section 3: Portfolio Management & Research Experience */}
-      {portfolioExperience && (
-        <section className={styles.section} aria-label="Portfolio management and research experience">
-          <h2 className={styles.sectionTitle}>Portfolio Management & Research Experience</h2>
-          <p className={styles.paragraph}>{portfolioExperience}</p>
+      {/* Section 3: Technology & Systems Leverage */}
+      {technologyLeverage.length > 0 && (
+        <section className={styles.section} aria-label="Technology and systems leverage">
+          <h2 className={styles.sectionTitle}>Technology & Systems Leverage</h2>
+          <ul className={styles.bullets}>
+            {technologyLeverage.map((item, j) => (
+              <li key={j} className={styles.bullet}>{item}</li>
+            ))}
+          </ul>
+          <p className={styles.paragraph}>
+            <Link href="/systems/technology-platform-architecture" className={styles.sectionLink}>
+              Technology platform architecture
+            </Link>
+          </p>
         </section>
       )}
 
@@ -155,6 +171,22 @@ export default function ResumePage() {
           </Link>
         </p>
       </section>
+
+      {/* Section 7: Contact */}
+      {contact && (
+        <section className={styles.section} aria-label="Contact">
+          <h2 className={styles.sectionTitle}>Contact</h2>
+          <p className={styles.contactLine}>
+            {contact.name}
+            {" · "}
+            <a href={`mailto:${contact.email}`}>{contact.email}</a>
+            {" · "}
+            <a href={contact.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            {" · "}
+            <a href={`tel:${contact.phone.replace(/\D/g, "")}`}>{contact.phone}</a>
+          </p>
+        </section>
+      )}
     </main>
   );
 }

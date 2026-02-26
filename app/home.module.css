@@ -9,9 +9,30 @@
 }
 
 .intro {
-  margin: 0 0 2rem;
+  margin: 0 0 0.75rem;
   color: var(--muted);
   font-size: 1.05rem;
+  line-height: 1.55;
+  max-width: 42rem;
+}
+
+.structuralNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.structuralNav a {
+  font-size: 0.95rem;
+  color: var(--theme-primary);
+  text-decoration: none;
+}
+
+.structuralNav a:hover {
+  text-decoration: underline;
 }
 
 .ctas {
