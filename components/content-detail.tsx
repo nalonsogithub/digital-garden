@@ -1,13 +1,34 @@
 import Link from "next/link";
+import type { ComponentType } from "react";
 import type { ContentItem, ContentSection } from "@/lib/content";
-import { MarkdownRenderer } from "@/components/markdown-renderer";
+import { MarkdownViewer } from "@/components/markdown-renderer";
 import { DownloadIcon, ExternalIcon } from "@/components/icons";
+import { MandelbrotExplorer } from "@/components/interactive/mandelbrot-explorer";
 import styles from "@/app/content-detail.module.css";
 
 interface ContentDetailProps {
   section: ContentSection;
   slug: string;
   item: ContentItem;
+}
+
+/** Registry of interactive widgets a content body can embed via `<!-- interactive:name -->`. */
+const INTERACTIVE_COMPONENTS: Record<string, ComponentType> = {
+  mandelbrot: MandelbrotExplorer,
+};
+
+const INTERACTIVE_MARKER = /<!--\s*interactive:(\w+)\s*-->/g;
+
+/** Splits markdown on interactive markers and interleaves the matching widgets. */
+function renderBody(body: string) {
+  const segments = body.split(INTERACTIVE_MARKER);
+  return segments.map((segment, i) => {
+    if (i % 2 === 1) {
+      const Widget = INTERACTIVE_COMPONENTS[segment];
+      return Widget ? <Widget key={`interactive-${i}`} /> : null;
+    }
+    return segment.trim() ? <MarkdownViewer key={`md-${i}`} content={segment} /> : null;
+  });
 }
 
 export function ContentDetail({ section, slug, item }: ContentDetailProps) {
@@ -56,9 +77,7 @@ export function ContentDetail({ section, slug, item }: ContentDetailProps) {
             </a>
           )}
         </div>
-        <div className="prose">
-          <MarkdownRenderer content={body} />
-        </div>
+        <div className="prose">{renderBody(body)}</div>
       </article>
     </main>
   );

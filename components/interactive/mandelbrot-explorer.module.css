@@ -1,0 +1,50 @@
+.wrap {
+  margin: 1rem 0;
+}
+
+.canvas {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  cursor: zoom-in;
+  background: #05060f;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.zoomLabel {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.button {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--theme-primary);
+  background: var(--theme-primary-subtle);
+  border: none;
+  border-radius: 6px;
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--theme-primary);
+  color: var(--background);
+}
+
+.caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
