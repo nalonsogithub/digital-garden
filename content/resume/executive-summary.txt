@@ -1,5 +1,6 @@
-Research authority: peer-reviewed publications; extensive internal research production; multi-asset and equity experience; signal development and portfolio construction expertise.
-Systems architecture: software development background; enterprise middleware and distributed systems; AI-enabled workflow design; structured agentic architecture in LLM environments.
-Commercial execution: direct asset raising responsibility; strategy positioning and consultant dialogue; integration of research into sales effectiveness; contribution to $700M+ in independent strategy growth.
-Product lifecycle fluency: idea inception through portfolio construction; system implementation and monitoring; cross-functional integration; strategy marketing and presentation; ongoing competitive positioning.
-Organizational leadership foundation: prior CTO role with full technology team responsibility; experience managing reporting lines across development teams; enterprise integration and institutional architecture perspective.
+Research authority: nine peer-reviewed journal articles and 100+ internal research memoranda; authored or co-built a dozen substantive papers and another dozen insight pieces in the last year alone.
+Portfolio stewardship: managed up to $8B in multi-asset portfolios at peak; raised $700M+ independently across defensive equity and defensive growth strategies; ongoing responsibility for institutional client mandates.
+Client translation: converted research into pension, endowment, foundation, sovereign, and consultant-ready responses, typically inside a week of the request.
+Systems leverage: designed and implemented AI-enabled platforms for investment demonstration, sales intelligence, attribution, compliance screening, and research publishing.
+Intellectual honesty as practice: multiple deliverables include self-initiated sections flagging measurement artifacts, weaker robustness, or claims that should be hedged.
+Distribution architecture: building toward a data-driven sales process where research surfaces opportunities, conversations trigger prepared follow-up, and pain points map to targeted outreach.

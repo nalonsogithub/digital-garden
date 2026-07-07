@@ -32,9 +32,10 @@ Demonstrates ability to originate and execute investment products end-to-end.
 - Multi-asset platform scaled to $40B–$60B in AUM during peak period.
 - Managed $6B–$8B in equity mandates within broader platform.
 - Independently raised $700M+ across defensive equity and defensive growth strategies.
-- Active participation in consultant and client meetings.
+- Ongoing portfolio stewardship alongside global strategist responsibilities.
+- Building distribution as a data-driven process: research surfaces opportunities, meetings trigger prepared follow-up, pain points map to targeted consultant and allocator outreach.
 
-Demonstrates revenue and asset growth impact.
+Demonstrates revenue impact and a redesign of how institutional sales can run on observable data.
 
 ## 4. Organizational integration
 

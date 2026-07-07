@@ -35,11 +35,10 @@ export function ContentDetail({ section, slug, item }: ContentDetailProps) {
             <span className={styles.actionBlock}>
               <Link href={frontmatter.pdf} className={styles.primaryButton} download>
                 <DownloadIcon size={16} className={styles.buttonIcon} />
-                download pdf
+                {frontmatter.pdf.toLowerCase().endsWith(".pdf")
+                  ? "download pdf"
+                  : "download paper"}
               </Link>
-              <span className={styles.note}>
-                (File may be a placeholder; add the PDF to <code>public/papers/</code> when ready.)
-              </span>
             </span>
           )}
           {frontmatter.external_url && (

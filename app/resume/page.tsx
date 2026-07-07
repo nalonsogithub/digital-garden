@@ -5,13 +5,18 @@ import {
   getResumeIntro,
   getResumeContact,
   getResumeTechnologyLeverage,
+  getResumeExecutiveSummary,
+  getResumePortfolioExperience,
 } from "@/lib/content";
 import { PageHeader } from "@/components/page-header";
 import { ResumePrintButton } from "@/components/resume-print-button";
+import { SITE_TITLE, SITE_BYLINE } from "@/lib/site";
 import styles from "./resume.module.css";
 
 export default function ResumePage() {
   const intro = getResumeIntro();
+  const executiveSummary = getResumeExecutiveSummary();
+  const portfolioExperience = getResumePortfolioExperience();
   const experience = getResumeExperience();
   const technologyLeverage = getResumeTechnologyLeverage();
   const education = getResumeEducation();
@@ -20,30 +25,40 @@ export default function ResumePage() {
   return (
     <main>
       <PageHeader
-        title="Director | Global Strategist"
-        byline="Institutional Client Engagement | Quantitative Research & Portfolio Management | AI Systems Architect"
+        title={SITE_TITLE}
+        byline={SITE_BYLINE}
         description="Professional experience with links to detailed work."
       />
       <p className={styles.printHint}>
         <ResumePrintButton />
       </p>
 
-      {/* Section 1: Executive Summary */}
       {intro && (
         <section className={styles.section} aria-label="Executive summary">
           <h2 className={styles.sectionTitle}>Executive Summary</h2>
           <p className={styles.summaryParagraph}>{intro}</p>
+          {executiveSummary.length > 0 && (
+            <ul className={styles.bullets}>
+              {executiveSummary.map((line, i) => (
+                <li key={i} className={styles.bullet}>{line}</li>
+              ))}
+            </ul>
+          )}
+          {portfolioExperience && (
+            <p className={styles.paragraph}>{portfolioExperience}</p>
+          )}
           <p className={styles.introLinks}>
             <Link href="/operating-model">Integrated capability model</Link>
             {" · "}
             <Link href="/product-lifecycle">Product lifecycle architecture</Link>
+            {" · "}
+            <Link href="/systems/data-driven-sales-architecture">Data-driven sales architecture</Link>
           </p>
         </section>
       )}
 
-      {/* Section 2: Current Role — Global Strategist */}
       {experience.length > 0 && (
-        <section className={styles.resume} aria-label="Current role">
+        <section className={styles.resume} aria-label="Experience">
           {experience.map((entry, i) => (
             <div key={i} className={styles.entry}>
               {entry.sectionTitle && !entry.continueCompany && (
@@ -112,7 +127,6 @@ export default function ResumePage() {
         </section>
       )}
 
-      {/* Section 3: Technology & Systems Leverage */}
       {technologyLeverage.length > 0 && (
         <section className={styles.section} aria-label="Technology and systems leverage">
           <h2 className={styles.sectionTitle}>Technology & Systems Leverage</h2>
@@ -129,7 +143,6 @@ export default function ResumePage() {
         </section>
       )}
 
-      {/* Section 4: Early Technical Foundations */}
       <section className={styles.section} aria-label="Early technical foundations">
         <h2 className={styles.sectionTitle}>Early Technical Foundations</h2>
         <p className={styles.paragraph}>
@@ -139,7 +152,6 @@ export default function ResumePage() {
         </p>
       </section>
 
-      {/* Section 5: Education */}
       {education.length > 0 && (
         <section className={styles.section} aria-label="Education">
           <h2 className={styles.sectionTitle}>Education</h2>
@@ -162,7 +174,6 @@ export default function ResumePage() {
         </section>
       )}
 
-      {/* Section 6: Publications */}
       <section className={styles.section} aria-label="Publications">
         <h2 className={styles.sectionTitle}>Publications</h2>
         <p className={styles.paragraph}>
@@ -172,7 +183,6 @@ export default function ResumePage() {
         </p>
       </section>
 
-      {/* Section 7: Contact */}
       {contact && (
         <section className={styles.section} aria-label="Contact">
           <h2 className={styles.sectionTitle}>Contact</h2>

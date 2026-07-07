@@ -9,7 +9,7 @@ export default function SystemsPage() {
     <main>
       <PageHeader
         title="Systems"
-        description="AI-enabled systems for investment research, portfolio management, and commercial execution."
+        description="AI-enabled systems for investment research, portfolio management, and data-driven distribution."
       />
       {items.length === 0 ? (
         <p style={{ color: "var(--muted)" }}>No systems yet.</p>

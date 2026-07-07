@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { SiteNav } from "@/components/site-nav";
+import { SITE_TITLE, SITE_BYLINE, SITE_DESCRIPTION } from "@/lib/site";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Digital Garden",
-  description: "Living resume and portfolio",
+  title: SITE_TITLE,
+  description: `${SITE_BYLINE}. ${SITE_DESCRIPTION}`,
 };
 
 export default function RootLayout({

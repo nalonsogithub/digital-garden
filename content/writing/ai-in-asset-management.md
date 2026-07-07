@@ -1,19 +1,27 @@
 ---
 title: "ai in asset management"
 date: "2024-12-01"
-summary: "Short summary for list views: how AI is changing research and execution in asset management."
-pdf: ""
-external_url: "https://example.com/ai-in-asset-management"
-tags: ["ai", "asset-management", "writing"]
+summary: "Guest lecture and internal strategy on where AI compresses mechanical research work while preserving the judgment layer in institutional asset management."
+external_url: ""
+tags: ["ai", "asset-management", "education"]
 category: personal
 ---
 
-Body text: an overview of how AI is being used in research, risk, and execution within asset management.
+## Core claim
 
-## Research and alpha
+The question is not whether AI will replace investment judgment. The question is where AI can compress the mechanical parts of the research process while leaving the judgment layer intact.
 
-Placeholder. Discussion of data sources, model types, and governance considerations.
+## Applications discussed
 
-## Execution and risk
+- Research synthesis and first-draft production under structured data constraints
+- Portfolio attribution and review automation with PM editorial control
+- Compliance screening and restriction monitoring at universe scale
+- Distribution workflows where research findings become client-ready artifacts on demand
 
-Placeholder. Use of AI in trading and risk systems. The published version is linked via **view published version** when `external_url` is set.
+## Audience
+
+Delivered as a 90-minute undergraduate finance guest lecture at Duke University on AI in asset management and factor investing. Material also informs internal strategy on AI-enabled sales and research architecture.
+
+## Implication
+
+AI creates value when it reduces the distance between analysis and use. A tool only matters if it changes what a PM, strategist, or salesperson can do in the next meeting.

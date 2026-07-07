@@ -2,16 +2,92 @@
   {
     "sectionTitle": "PanAgora Asset Management",
     "companyDates": "2010 — present",
-    "role": "Director | Global Strategist",
+    "role": "Portfolio Manager & Global Strategist",
     "company": "",
     "start": "2025",
     "end": "present",
     "bullets": [],
     "subsections": [
-      { "title": "AI-Enabled Strategy & Systems Architecture", "bullets": [{ "text": "Sole architect and developer of two institutional AI-enabled platforms: Investment Process Demo (model transparency and portfolio traceability); Sales AI Platform (market analysis engine, agentic commentary generator, competitive intelligence framework).", "link": { "section": "systems", "slug": "investment-process-demo", "label": "view details" } }, { "text": "Designed structured agent-based workflows integrating LLM capabilities into research and sales processes.", "link": { "section": "systems", "slug": "sales-ai-platform", "label": "view details" } }] },
-      { "title": "Client & Market Interface", "bullets": [{ "text": "Participated in ~30 client and prospect meetings within first four months in role." }, { "text": "Lead introductory strategy presentations; coordinate deeper technical follow-up with portfolio managers." }, { "text": "Present to consultants and institutional audiences." }, { "text": "Deliver two guest lectures per semester at Duke University; prior academic presentations at MIT and Oxford." }] },
-      { "title": "Research & Communication Architecture", "bullets": [{ "text": "Authored or significantly contributed to 15+ client-facing research memoranda since November." }, { "text": "Increased outward-facing research cadence; improved speed and consistency of client responses." }, { "text": "Designed systems to standardize prior messaging and improve communication accuracy." }] },
-      { "title": "Commercial & Organizational Impact", "bullets": [{ "text": "Systems deployed during period of $9B+ net new firm asset growth." }, { "text": "Developed internal metrics to track meeting progression and second-meeting conversion; directional improvement relative to historical norms." }, { "text": "Cross-functional integration spanning research, portfolio management, sales, and IT infrastructure." }] }
+      {
+        "title": "Portfolio Stewardship",
+        "bullets": [
+          {
+            "text": "Continue to manage and oversee institutional client portfolios across the firm's equity and multi-asset platform alongside strategist responsibilities."
+          },
+          {
+            "text": "Produce portfolio reviews with full Brinson-Fachler attribution, sleeve decompositions, and episode-level narratives tied to verified market events for endowments, foundations, and institutional mandates.",
+            "link": { "section": "systems", "slug": "portfolio-attribution-library", "label": "attribution system" }
+          },
+          {
+            "text": "Support defensive growth and multi-asset mandates with attribution verification, performance narrative, and client-facing analytical responses.",
+            "link": { "section": "writing", "slug": "performance-attribution-case-study", "label": "case study" }
+          }
+        ]
+      },
+      {
+        "title": "Global Strategist & Institutional Distribution",
+        "bullets": [
+          {
+            "text": "Lead introductory strategy presentations and deeper technical follow-ups with portfolio managers for pensions, endowments, foundations, sovereign institutions, and consultants."
+          },
+          {
+            "text": "Authored or significantly contributed to two dozen client-facing written deliverables in the last nine months: meeting preparation, post-meeting response packages, bespoke analytical answers, and consultant-ready research.",
+            "link": { "section": "writing", "slug": "more-risk-less-reward", "label": "research program" }
+          },
+          {
+            "text": "Deliver quarterly strategy commentary and symposium scripts; guest lectures at Duke University with prior presentations at MIT and Oxford."
+          }
+        ]
+      },
+      {
+        "title": "Research & Content Production",
+        "bullets": [
+          {
+            "text": "Built a connected research program on market structure and active management: where active risk is rewarded, whether track records are statistically distinguishable from luck, and how benchmark concentration has changed the opportunity set.",
+            "link": { "section": "writing", "slug": "the-alpha-supply", "label": "alpha supply paper" }
+          },
+          {
+            "text": "Authored papers on tracking-error decomposition, small-cap market structure, Korea discount repricing, and active-versus-passive dynamics across five equity universes; several taken through compliance to external distribution.",
+            "link": { "section": "writing", "slug": "active-vs-passive-five-universe", "label": "five-universe study" }
+          },
+          {
+            "text": "Wrote rapid-response macro and geopolitical notes during the early-2026 escalation, grounding headlines in market transmission mechanics."
+          }
+        ]
+      },
+      {
+        "title": "Data-Driven Sales Architecture",
+        "bullets": [
+          {
+            "text": "The objective is not faster workflows alone. It is reimagining how institutional sales would run in a fully data-driven ecosystem: research surfaces interesting anecdotes and competitive pain points; conversations trigger prepared follow-up materials; opportunities map to the asset owners and consultants most likely to care.",
+            "link": { "section": "systems", "slug": "data-driven-sales-architecture", "label": "architecture" }
+          },
+          {
+            "text": "Built an anomaly-discovery pipeline over a frozen manager-universe dataset to surface marketable manager pain points as ranked candidates for notes and targeted outreach.",
+            "link": { "section": "systems", "slug": "anomaly-discovery-pipeline", "label": "pipeline" }
+          },
+          {
+            "text": "Developed consultant-channel intelligence across major consulting firms, combining hand-curated coverage maps with CRM history analysis to identify relationship white space.",
+            "link": { "section": "systems", "slug": "consultant-intelligence-vault", "label": "consultant vault" }
+          }
+        ]
+      },
+      {
+        "title": "AI Systems & Operating Leverage",
+        "bullets": [
+          {
+            "text": "Designed and implemented institutional AI-enabled platforms: Investment Process Demo (model transparency and portfolio traceability) and Sales AI Platform (market analysis, agentic commentary, competitive intelligence).",
+            "link": { "section": "systems", "slug": "investment-process-demo", "label": "process demo" }
+          },
+          {
+            "text": "Built restriction-intelligence monitoring for values-based mandates, a document formatting and compliance pipeline, and a research-library publishing system with no deploy step.",
+            "link": { "section": "systems", "slug": "restriction-intelligence", "label": "restriction intelligence" }
+          },
+          {
+            "text": "Codified writing-voice and agent skills so drafts arrive closer to final; packaged attribution, screening, and publishing as repeatable workflows rather than one-off automation."
+          }
+        ]
+      }
     ]
   },
   {
@@ -22,9 +98,49 @@
     "end": "2024",
     "bullets": [],
     "subsections": [
-      { "title": "Leadership & Scope", "bullets": [{ "text": "Led quantitative research and portfolio management across commodities, multi-asset, and global equity strategies. Initially appointed to lead the active commodity sleeve within the multi-asset platform, later transitioned to oversee equity allocation and portfolio construction within multi-asset mandates. Managed up to $8B in multi-asset portfolios at peak and contributed to broader platform growth reaching tens of billions in AUM during expansion phase." }] },
-      { "title": "Research & Portfolio Architecture", "bullets": [{ "text": "Designed scalable stock-level risk parity framework incorporating multidimensional risk allocation constraints; reduced portfolio construction runtime from hours to seconds, materially expanding research and backtesting capability.", "link": { "section": "writing", "slug": "stock-level-risk-parity", "label": "technical detail" } }, { "text": "Architected Defensive Equity platform spanning U.S., International, Small Cap, and Emerging Markets strategies; long-only, low-volatility framework delivering competitive downside protection across cycles.", "link": { "section": "writing", "slug": "defensive-equity-platform", "label": "research detail" } }, { "text": "Designed and launched Defensive Growth suite in 2019, integrating low-volatility efficiency with tailored beta allocation to achieve market-level risk without leverage.", "link": { "section": "writing", "slug": "defensive-growth-architecture", "label": "defensive growth detail" } }, { "text": "Transitioned framework to incorporate bottom-up stock selection via flagship alpha platform, increasing tracking error above 4% while preserving risk architecture.", "link": { "section": "writing", "slug": "defensive-growth-evolution", "label": "strategy evolution detail" } }, { "text": "Published 9 external research papers and 100+ internal research memoranda." }] },
-      { "title": "Capital & Commercialization", "bullets": [{ "text": "Raised $700M+ independently across defensive equity and defensive growth strategies." }, { "text": "Led commercialization efforts including client presentations, consultant engagement, and strategy positioning." }, { "text": "Defensive Growth example: International strategy outperformed benchmark by ~5% in 2025.", "link": { "section": "writing", "slug": "performance-attribution-case-study", "label": "performance detail" } }] }
+      {
+        "title": "Leadership & Scope",
+        "bullets": [
+          {
+            "text": "Led quantitative research and portfolio management across commodities, multi-asset, and global equity strategies. Managed up to $8B in multi-asset portfolios at peak and contributed to broader platform growth reaching tens of billions in AUM during expansion phase."
+          }
+        ]
+      },
+      {
+        "title": "Research & Portfolio Architecture",
+        "bullets": [
+          {
+            "text": "Designed scalable stock-level risk parity framework incorporating multidimensional risk allocation constraints; reduced portfolio construction runtime from hours to seconds.",
+            "link": { "section": "writing", "slug": "stock-level-risk-parity", "label": "technical detail" }
+          },
+          {
+            "text": "Architected Defensive Equity platform spanning U.S., International, Small Cap, and Emerging Markets strategies.",
+            "link": { "section": "writing", "slug": "defensive-equity-platform", "label": "research detail" }
+          },
+          {
+            "text": "Designed and launched Defensive Growth suite in 2019; transitioned framework to incorporate bottom-up stock selection while preserving risk architecture.",
+            "link": { "section": "writing", "slug": "defensive-growth-architecture", "label": "defensive growth detail" }
+          },
+          {
+            "text": "Published nine external research papers and 100+ internal research memoranda."
+          }
+        ]
+      },
+      {
+        "title": "Capital & Commercialization",
+        "bullets": [
+          {
+            "text": "Raised $700M+ independently across defensive equity and defensive growth strategies."
+          },
+          {
+            "text": "Led commercialization efforts including client presentations, consultant engagement, and strategy positioning."
+          },
+          {
+            "text": "Defensive Growth International strategy outperformed benchmark by approximately 5% in 2025.",
+            "link": { "section": "writing", "slug": "performance-attribution-case-study", "label": "performance detail" }
+          }
+        ]
+      }
     ]
   },
   {
@@ -34,9 +150,16 @@
     "start": "2007",
     "end": "2010",
     "bullets": [
-      { "text": "Developed quantitative factors and portfolio construction enhancements within a ~$400M U.S. small-cap long-short strategy." },
-      { "text": "Designed portfolio optimization constraint to maximize differentiation from common institutional factor exposures using fund holdings data, factor crowding metrics, and market microstructure intelligence." },
-      { "text": "This architecture materially reduced unintended beta exposure during systemic stress. In 2008, while most long-only and long-short portfolios experienced significant drawdowns, the strategy delivered approximately flat performance, ranking at the top of its peer group.", "link": { "section": "writing", "slug": "mellon-capital-long-short-architecture", "label": "research detail" } }
+      {
+        "text": "Developed quantitative factors and portfolio construction enhancements within a ~$400M U.S. small-cap long-short strategy."
+      },
+      {
+        "text": "Designed portfolio optimization constraint to maximize differentiation from common institutional factor exposures using fund holdings data, factor crowding metrics, and market microstructure intelligence."
+      },
+      {
+        "text": "Architecture materially reduced unintended beta exposure during systemic stress. In 2008, the strategy delivered approximately flat performance and ranked at the top of its peer group.",
+        "link": { "section": "writing", "slug": "mellon-capital-long-short-architecture", "label": "research detail" }
+      }
     ],
     "subsections": []
   },
@@ -47,10 +170,18 @@
     "start": "2000",
     "end": "2005",
     "bullets": [
-      { "text": "Directed enterprise systems architecture and development teams (30+ direct reports) across distributed, middleware-driven platforms." },
-      { "text": "Designed distributed inventory intelligence framework for large retail network operating under intermittent connectivity constraints." },
-      { "text": "Implemented scalable document digitization and retrieval systems for financial and insurance institutions." },
-      { "text": "Contributed to certification design and technical standards for enterprise imaging middleware; integrated disconnected systems into cohesive enterprise workflows." }
+      {
+        "text": "Directed enterprise systems architecture and development teams (30+ direct reports) across distributed, middleware-driven platforms."
+      },
+      {
+        "text": "Designed distributed inventory intelligence framework for large retail network operating under intermittent connectivity constraints."
+      },
+      {
+        "text": "Implemented scalable document digitization and retrieval systems for financial and insurance institutions."
+      },
+      {
+        "text": "Contributed to certification design and technical standards for enterprise imaging middleware."
+      }
     ]
   }
 ]

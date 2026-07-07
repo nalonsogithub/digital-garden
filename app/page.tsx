@@ -1,26 +1,27 @@
 import Link from "next/link";
 import { PageHeader } from "@/components/page-header";
 import { DocumentIcon, FolderIcon, PenIcon } from "@/components/icons";
+import { SITE_TITLE, SITE_BYLINE } from "@/lib/site";
 import styles from "./home.module.css";
 
 export default function Home() {
   return (
     <main>
-      <PageHeader
-        title="Director | Global Strategist"
-        byline="Institutional Client Engagement | Quantitative Research & Portfolio Management | AI Systems Architect"
-        variant="hero"
-      />
+      <PageHeader title={SITE_TITLE} byline={SITE_BYLINE} variant="hero" />
       <p className={styles.intro}>
-        Global Strategist bridging investment and distribution, integrating quantitative research, portfolio expertise, and cross-platform systems architecture to elevate institutional commercial effectiveness.
+        I manage institutional portfolios and lead the firm&apos;s research-to-revenue translation layer:
+        turning quantitative work into client-ready artifacts, consultant dialogue, and systems that
+        scale both.
       </p>
       <p className={styles.intro}>
-        I translate investment insight into scalable client engagement, lead prospect and consultant dialogues across the firm's product platform, and design technology-enabled systems that increase communication velocity and institutional leverage.
+        The constraint in institutional distribution is not idea generation. It is converting analysis
+        into materials that matter in a live pipeline. My work spans portfolio construction, authored
+        research, and the architecture behind a data-driven sales process.
       </p>
-      <nav className={styles.structuralNav} aria-label="Primary areas">
-        <Link href="/research">Investment Depth</Link>
-        <Link href="/systems">Cross-Platform Systems</Link>
-        <Link href="/resume">Commercial Strategy</Link>
+      <nav className={styles.structuralNav} aria-label="Audience paths">
+        <Link href="/resume">For allocators &amp; CIOs</Link>
+        <Link href="/systems">For distribution &amp; sales leadership</Link>
+        <Link href="/systems/technology-platform-architecture">For technology leadership</Link>
       </nav>
       <nav className={styles.ctas} aria-label="Primary sections">
         <Link href="/resume" className={styles.cta}>

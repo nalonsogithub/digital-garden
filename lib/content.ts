@@ -7,7 +7,7 @@ const contentDir = path.join(process.cwd(), "content");
 export type ContentSection = "systems" | "research" | "writing" | "technical-lineage";
 
 /** For writing items: "professional" = finance publications & capability narratives; "personal" = quantum primer, essays, etc. */
-export type WritingCategory = "professional" | "personal";
+export type WritingCategory = "professional" | "institutional-research" | "personal";
 
 export interface ContentFrontmatter {
   title: string;
