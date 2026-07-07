@@ -18,7 +18,7 @@ const FILTERS: { key: FilterKey; label: string }[] = [
   { key: "all", label: "All" },
   { key: "recent", label: "Recent research" },
   { key: "peer-reviewed", label: "Peer-reviewed" },
-  { key: "capabilities", label: "Platforms & architecture" },
+  { key: "capabilities", label: "Architectures" },
   { key: "essays", label: "Essays" },
   { key: "presentations", label: "Presentations" },
 ];
@@ -38,9 +38,9 @@ const SECTIONS: SectionConfig[] = [
   },
   {
     key: "capabilities",
-    title: "Platforms & architecture",
+    title: "Architectures",
     description:
-      "Major portfolio-construction platforms, strategy architectures, and enabling systems built across the investment career.",
+      "Major portfolio-construction and strategy architectures, separated from the production systems used to operate them.",
     linkLabel: "Read brief",
   },
   {
@@ -117,7 +117,7 @@ export function ResearchExplorer({ items }: { items: ContentItem[] }) {
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search research, platforms, essays..."
+            placeholder="Search research, architectures, essays..."
           />
         </div>
         <div className={styles.filters} aria-label="Filter sections">

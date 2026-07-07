@@ -21,6 +21,10 @@ Design a long-only, non-levered equity framework that preserves the efficiency c
 - Multidimensional risk balancing across equity universe.
 - Structural objective of low correlation to traditional long-only portfolios.
 
+## Production infrastructure
+
+Built the production infrastructure required to manage the strategy: backtests, optimizations, client restriction lists, portfolio monitoring, and repeatable review workflows.
+
 ## Research extension
 
 - Supported by 20+ internal research pieces exploring regime behavior, sector sensitivity, macro alignment, and performance dispersion.

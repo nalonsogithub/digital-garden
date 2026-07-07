@@ -3,7 +3,7 @@ title: "Investment Process Demo"
 date: "2025-01-01"
 summary: "Interactive platform for making quantitative model architecture, signal logic, optimization, and position sizing visible in client and portfolio-management conversations."
 tags: ["quantitative investing", "optimization", "model transparency"]
-systems_group: "core-platforms"
+systems_group: "distribution-intelligence"
 ---
 
 ## Purpose

@@ -6,6 +6,12 @@ Entries from 2026-07-07 onward were made with Claude Code and are described in
 detail below. Earlier entries predate that workflow and are summarized from
 git history only.
 
+## 2026-07-07 - Split strategy architectures from production platforms
+
+- Renamed the Research page's platform bucket to "Architectures" and retitled the Defensive Equity and Defensive Growth entries as architecture/platform briefs.
+- Added separate Defensive Equity Platform and Defensive Growth Platform entries to the Platforms page for the production systems used to manage portfolios, backtests, optimizations, restrictions, and monitoring.
+- Moved Investment Process Demo and Sales AI Platform under Distribution intelligence.
+
 ## 2026-07-07 - Reorganize Platforms page into navigable system groups
 
 - Replaced the static Platforms page with searchable filters for core platforms, distribution intelligence, and research infrastructure.

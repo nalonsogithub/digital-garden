@@ -25,7 +25,7 @@ const SECTIONS: SectionConfig[] = [
     key: "core-platforms",
     title: "Core platforms",
     description:
-      "Interactive systems that expose investment process, sales intelligence, and portfolio attribution in usable form.",
+      "Production systems used to manage portfolios, run backtests and optimizations, monitor restrictions, and answer portfolio questions.",
   },
   {
     key: "distribution-intelligence",
@@ -42,9 +42,11 @@ const SECTIONS: SectionConfig[] = [
 ];
 
 const SYSTEM_ORDER = [
+  "defensive-growth-platform",
+  "defensive-equity-platform",
+  "portfolio-attribution-library",
   "investment-process-demo",
   "sales-ai-platform",
-  "portfolio-attribution-library",
   "consultant-intelligence-vault",
   "meeting-preparation-playbooks",
   "restriction-intelligence",

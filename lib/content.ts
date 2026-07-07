@@ -223,7 +223,7 @@ export const CONTENT_TYPE_LABELS: Record<ContentType, string> = {
 export const SYSTEMS_GROUP_LABELS: Record<SystemsGroup, { title: string; description: string }> = {
   "core-platforms": {
     title: "Core platforms",
-    description: "Interactive systems that expose investment process, sales intelligence, and portfolio attribution in usable form.",
+    description: "Production systems used to manage portfolios, run backtests and optimizations, monitor restrictions, and answer portfolio questions.",
   },
   "distribution-intelligence": {
     title: "Distribution intelligence",

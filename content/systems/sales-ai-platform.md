@@ -3,7 +3,7 @@ title: "Sales AI Platform"
 date: "2025-01-01"
 summary: "Core AI platform connecting structured market data, agentic commentary, competitive analysis, and distribution workflows."
 tags: ["sales enablement", "llm", "market analysis", "competitive intelligence"]
-systems_group: "core-platforms"
+systems_group: "distribution-intelligence"
 ---
 
 ## Purpose
