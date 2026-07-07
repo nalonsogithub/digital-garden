@@ -6,6 +6,10 @@ Entries from 2026-07-07 onward were made with Claude Code and are described in
 detail below. Earlier entries predate that workflow and are summarized from
 git history only.
 
+## 2026-07-07 — Fix client-facing framing on the Live Attribution System page (`ad04dc7`)
+
+- The system is internal (portfolio managers and analysts use it); it was never client-facing itself. Renamed the section from "Client-facing use" to "Internal use, client-facing output" and reworded to make clear clients never touch the tool directly, its speed is what lets a PM answer a client question live during a call.
+
 ## 2026-07-07 — Tighten resume executive summary: fix current scope, cut redundancy, sync links (`ed0f08a`)
 
 - Corrected the opening line: the current role manages equity portfolios only; commodities/multi-asset is background, not current scope.
