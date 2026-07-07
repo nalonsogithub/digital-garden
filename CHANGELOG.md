@@ -6,6 +6,11 @@ Entries from 2026-07-07 onward were made with Claude Code and are described in
 detail below. Earlier entries predate that workflow and are summarized from
 git history only.
 
+## 2026-07-07 — Trim setup line and unverified growth claim from Sales AI Platform page (`fe968fb`)
+
+- Removed the "question is not whether AI can write faster" throat-clearing opener from Strategic value; the substantive sentence now stands on its own.
+- Removed "deployed during a period of significant firm asset growth" from Organizational impact, an unsupported claim the metrics sentence after it didn't need.
+
 ## 2026-07-07 — Fix client-facing framing on the Live Attribution System page (`ad04dc7`)
 
 - The system is internal (portfolio managers and analysts use it); it was never client-facing itself. Renamed the section from "Client-facing use" to "Internal use, client-facing output" and reworded to make clear clients never touch the tool directly, its speed is what lets a PM answer a client question live during a call.
