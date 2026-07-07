@@ -44,6 +44,14 @@ Running an investment organization draws on five pillars: research depth, produc
 - Recent development of AI-enabled agentic systems for research and sales.
 - Structured AI integration into workflows rather than ad hoc usage.
 
+## How this evolves
+
+The rollout follows a phase, not a single build. The first phase targets workflows that already exist: attribution, meeting prep, research publishing, made faster by the systems rather than reinvented by them.
+
+The second phase starts once those systems are in daily use. Each cycle retains what worked: which framing landed in a meeting, which follow-up converted, which research angle got traction. That retained history is what starts to make the system look like it is learning on its own. It is not learning in the machine-learning sense. It is accumulating enough real outcomes that the next recommendation is better informed than the last.
+
+The third phase depends on density, not time. Once enough of that retained history builds up across enough of the relevant areas, a client segment, a research theme, a consultant relationship, the system stops just executing faster and starts surfacing what to do next before anyone asks. Proactive behavior is not a feature that gets switched on. It is what falls out once there is enough retained signal to act on.
+
 ## Executive framing
 
 The distinguishing factor is not excellence in any single pillar. It is the integration of research authority, product design, commercial results, organizational fluency, and technical leverage into one operating capability.

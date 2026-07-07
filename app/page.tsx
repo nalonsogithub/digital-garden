@@ -78,9 +78,20 @@ export default function Home() {
         </div>
       </section>
 
-      <p className={styles.howLink}>
-        <Link href="/operating-model">How the pieces fit together</Link>
-      </p>
+      <nav className={styles.strategyLinks} aria-label="Strategy and operating model">
+        <span className={styles.strategyLabel}>How it all fits together</span>
+        <div className={styles.strategyRow}>
+          <Link href="/operating-model" className={styles.strategyLink}>
+            Operating model
+          </Link>
+          <Link href="/cross-vertical-strategy" className={styles.strategyLink}>
+            Cross-vertical strategy
+          </Link>
+          <Link href="/product-lifecycle" className={styles.strategyLink}>
+            Product lifecycle
+          </Link>
+        </div>
+      </nav>
     </main>
   );
 }
