@@ -6,6 +6,14 @@ Entries from 2026-07-07 onward were made with Claude Code and are described in
 detail below. Earlier entries predate that workflow and are summarized from
 git history only.
 
+## 2026-07-07 — Tighten resume executive summary: fix current scope, cut redundancy, sync links (`ed0f08a`)
+
+- Corrected the opening line: the current role manages equity portfolios only; commodities/multi-asset is background, not current scope.
+- Reworded the research-to-client-material phrasing to align with the homepage's Distribution 2.0 framing instead of echoing the phrase retired there.
+- Removed the closing portfolio-experience paragraph, which repeated the commodities/multi-asset/equity list a third time with no new information.
+- Split the distribution-architecture bullet into two, separating the system description from the meeting-cadence proof point.
+- Synced the resume's strategy-page links with the homepage's pill labels and added the missing link to `cross-vertical-strategy`.
+
 ## 2026-07-07 — Rewrite homepage intro around the Distribution 2.0 vision (`2c49b9a`)
 
 - Replaced the portfolio-manager/researcher framing on the homepage with a single strategist throughline: three backgrounds (quantitative research, systems architecture, client-facing communication) applied to modernizing institutional distribution, framed as leading into the AI era rather than catching up.
