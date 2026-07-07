@@ -5,6 +5,7 @@ summary: "Scalable multidimensional risk allocation framework for large equity u
 tags: ["portfolio construction", "optimization", "risk parity"]
 category: "capabilities"
 content_type: "strategy-brief"
+listed: false
 ---
 
 ## Overview

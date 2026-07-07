@@ -6,6 +6,12 @@ Entries from 2026-07-07 onward were made with Claude Code and are described in
 detail below. Earlier entries predate that workflow and are summarized from
 git history only.
 
+## 2026-07-07 - Add research filters and reorganize career platform work
+
+- Replaced the static Research index with a searchable, filterable explorer for recent research, peer-reviewed publications, career platforms, essays, and presentations.
+- Distinguished Research sections with separate visual section treatments so peer-reviewed papers, institutional research, platforms, essays, and presentations are easier to scan.
+- Tightened the career platform set to the major platform/capability items and moved AI in Asset Management out of Essays into Presentations, anchored to the J.P. Morgan Quantitative Asset Management Conference 2023 talk.
+
 ## 2026-07-07 - Add peer-reviewed publication summaries and request-copy links
 
 - Expanded all nine peer-reviewed research pages from placeholder stubs into publication pages with real executive summaries drawn from the local publication summary file.

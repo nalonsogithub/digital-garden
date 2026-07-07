@@ -1,11 +1,12 @@
 ---
 title: "AI in Asset Management"
-date: "2024-12-01"
-summary: "Guest lecture and internal strategy on where AI compresses mechanical research work while preserving the judgment layer in institutional asset management."
+date: "2023"
+summary: "Presentation on the introduction of artificial intelligence into the asset-management process, with emphasis on compressing mechanical research work while preserving investment judgment."
 external_url: ""
-tags: ["ai", "asset-management", "education"]
-category: "essays"
-content_type: "lecture"
+tags: ["ai", "asset management", "presentation"]
+category: "presentations"
+content_type: "presentation"
+publication: "J.P. Morgan Quantitative Asset Management Conference 2023"
 ---
 
 ## Core claim
@@ -21,7 +22,7 @@ The question is not whether AI will replace investment judgment. The question is
 
 ## Audience
 
-Delivered as a 90-minute undergraduate finance guest lecture at Duke University on AI in asset management and factor investing. Material also informs internal strategy on AI-enabled sales and research architecture.
+Presented at the J.P. Morgan Quantitative Asset Management Conference in 2023 on the introduction of artificial intelligence into the asset-management process. Related versions of the material were also used in guest lectures and internal strategy discussions on AI-enabled sales and research architecture.
 
 ## Implication
 

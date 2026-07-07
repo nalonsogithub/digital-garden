@@ -1,9 +1,7 @@
 import Link from "next/link";
 import {
-  getContentBySlug,
-  contentSectionPath,
-  CONTENT_TYPE_LABELS,
   type ContentFrontmatter,
+  type ContentType,
   type ContentSection,
 } from "@/lib/content";
 import { ExternalIcon } from "@/components/icons";
@@ -21,6 +19,21 @@ function badgeLabel(frontmatter: ContentFrontmatter): string | null {
   if (frontmatter.content_type) return CONTENT_TYPE_LABELS[frontmatter.content_type];
   return null;
 }
+
+function contentSectionPath(section: ContentSection): string {
+  if (section === "writing") return "research";
+  return section;
+}
+
+const CONTENT_TYPE_LABELS: Record<ContentType, string> = {
+  "white-paper": "White paper",
+  "peer-reviewed": "Peer-reviewed",
+  "case-study": "Case study",
+  "strategy-brief": "Strategy brief",
+  essay: "Essay",
+  lecture: "Lecture",
+  presentation: "Presentation",
+};
 
 export function ContentCard({ section, slug, frontmatter, linkLabel = "Read" }: ContentCardProps) {
   const href = `/${contentSectionPath(section)}/${slug}`;
@@ -78,24 +91,5 @@ export function ContentCard({ section, slug, frontmatter, linkLabel = "Read" }: 
         )}
       </div>
     </article>
-  );
-}
-
-interface FeaturedCardProps {
-  section: ContentSection;
-  slug: string;
-  linkLabel: string;
-}
-
-export function FeaturedCard({ section, slug, linkLabel }: FeaturedCardProps) {
-  const item = getContentBySlug(section, slug);
-  if (!item) return null;
-  return (
-    <ContentCard
-      section={section}
-      slug={slug}
-      frontmatter={item.frontmatter}
-      linkLabel={linkLabel}
-    />
   );
 }

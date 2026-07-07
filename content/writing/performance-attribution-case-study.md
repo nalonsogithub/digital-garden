@@ -5,6 +5,7 @@ summary: "Defensive Growth International strategy outperformed benchmark by appr
 tags: ["performance", "defensive growth", "attribution"]
 category: "capabilities"
 content_type: "case-study"
+listed: false
 ---
 
 ## Example

@@ -1,7 +1,7 @@
 ---
-title: "Defensive Growth Architecture"
-date: "2013"
-summary: "Research-driven solution to deliver low-volatility efficiency at market-level risk without leverage."
+title: "Defensive Growth Architecture and Platform"
+date: "2018"
+summary: "Research-driven platform for delivering low-volatility efficiency with market-level participation, extending the earlier defensive equity architecture into Defensive Growth."
 tags: ["portfolio construction", "low volatility", "risk allocation"]
 category: "capabilities"
 content_type: "strategy-brief"

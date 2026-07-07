@@ -7,7 +7,7 @@ const contentDir = path.join(process.cwd(), "content");
 export type ContentSection = "systems" | "research" | "writing" | "technical-lineage";
 
 /** Primary bucket on the Research index. */
-export type WritingCategory = "research" | "capabilities" | "essays";
+export type WritingCategory = "research" | "capabilities" | "essays" | "presentations";
 
 /** Subgroup within Research. */
 export type ResearchGroup = "recent" | "peer-reviewed";
@@ -19,7 +19,8 @@ export type ContentType =
   | "case-study"
   | "strategy-brief"
   | "essay"
-  | "lecture";
+  | "lecture"
+  | "presentation";
 
 export type SystemsGroup = "client-distribution" | "research-infrastructure" | "platform";
 
@@ -216,6 +217,7 @@ export const CONTENT_TYPE_LABELS: Record<ContentType, string> = {
   "strategy-brief": "Strategy brief",
   essay: "Essay",
   lecture: "Lecture",
+  presentation: "Presentation",
 };
 
 export const SYSTEMS_GROUP_LABELS: Record<SystemsGroup, { title: string; description: string }> = {

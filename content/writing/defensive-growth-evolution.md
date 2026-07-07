@@ -5,6 +5,7 @@ summary: "Q4 2025 strategy transition incorporating bottom-up stock selection vi
 tags: ["portfolio construction", "defensive growth", "strategy evolution"]
 category: "capabilities"
 content_type: "strategy-brief"
+listed: false
 ---
 
 ## Transition

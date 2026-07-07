@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FeaturedCard } from "@/components/content-card";
+import { FeaturedCard } from "@/components/featured-card";
 import { SITE_TITLE, SITE_BYLINE } from "@/lib/site";
 import styles from "./home.module.css";
 
