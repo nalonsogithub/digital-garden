@@ -34,10 +34,10 @@ Three integrated components:
 
 ## Strategic value
 
-The question is not whether AI can write faster. It is whether sales can run on the same observable data infrastructure as research: anomalies surfaced, artifacts prepared before meetings, follow-up deployed when interest appears.
+Sales runs on the same observable data infrastructure as research: anomalies surfaced, artifacts prepared before meetings, follow-up deployed when interest appears.
 
 This platform supplies the structured data and commentary layer. It works alongside consultant intelligence, anomaly discovery, and the research-library publishing system described in the [data-driven sales architecture](/systems/data-driven-sales-architecture).
 
 ## Organizational impact
 
-Deployed during a period of significant firm asset growth. Internal metrics track meeting progression and second-meeting conversion with directional improvement relative to historical norms. Authored or contributed to two dozen client-facing research deliverables in the last nine months, with AI-enabled workflows accelerating production while preserving editorial oversight.
+Internal metrics track meeting progression and second-meeting conversion with directional improvement relative to historical norms. Authored or contributed to two dozen client-facing research deliverables in the last nine months, with AI-enabled workflows accelerating production while preserving editorial oversight.
