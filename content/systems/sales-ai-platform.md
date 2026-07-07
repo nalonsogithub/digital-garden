@@ -1,8 +1,9 @@
 ---
-title: "sales ai platform"
+title: "Sales AI Platform"
 date: "2025-01-01"
 summary: "Modular sales intelligence system: structured market data, agentic commentary, and competitive analysis as components of a data-driven distribution architecture."
 tags: ["sales enablement", "llm", "market analysis", "competitive intelligence"]
+systems_group: "client-distribution"
 ---
 
 ## Purpose

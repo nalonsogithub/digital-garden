@@ -1,29 +1,25 @@
 ---
 title: "More Risk, Less Reward"
 date: "2025-11-01"
-summary: "Study of ~900 core US large-cap managers showing post-2020 tracking-error increases driven by systematic exposure rather than idiosyncratic selection, with limited payoffs for the extra risk."
-category: institutional-research
+summary: "Roughly 900 core US large-cap managers: post-2020 tracking-error increases look systematic, not stock-specific, and investors were not paid for the extra risk."
+category: "research"
 tags: ["active management", "tracking error", "market structure", "US large cap"]
+research_group: "recent"
+content_type: "white-paper"
 ---
 
-## Core claim
+## The issue
 
-The post-2020 rise in tracking error among core US large-cap managers was driven largely by systematic and factor exposure, not idiosyncratic stock selection. Managers who took the extra risk were generally not paid for it.
+Tracking error rose after 2020 across core US large-cap managers. The usual read is that managers took more active risk. The decomposition suggests a different story: more systematic and factor exposure, not more idiosyncratic stock selection. Managers who took the extra risk were generally not paid for it.
 
-## Why this matters
+## Why allocators should care
 
-Allocators often treat higher tracking error as evidence of greater differentiation. In a concentrated, mega-cap-dominated benchmark, that interpretation is incomplete. The decomposition points in a different direction.
+A higher tracking-error number does not tell you whether a manager is making independent stock bets or renting the same factor tilts the benchmark already owns. In a concentrated, mega-cap-heavy index, those are not the same thing.
 
-## Evidence
+## What we did
 
-Analysis of roughly 900 core US large-cap managers with tracking-error decomposition and peer comparison. Companion short note and interactive competitor-explorer web page built for the sales team.
+Analysis of roughly 900 core US large-cap managers with tracking-error decomposition and peer comparison. Companion short note and an interactive competitor explorer for the sales team.
 
-## Implication
+## Takeaway
 
-Active risk should be treated as a scarce resource. In US Large Cap, investors were not consistently rewarded for paying for higher tracking error over this period. The cleaner client message matches risk form to market structure rather than defending active management generically.
-
-## Deliverables
-
-- Full research paper (compliance-reviewed)
-- Short companion note
-- Interactive web explorer for sales positioning
+Active risk is a scarce resource. Over this period in US Large Cap, paying for more tracking error did not reliably buy better outcomes. The client conversation shifts from defending active management to matching the form of active risk to market structure.

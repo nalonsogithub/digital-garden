@@ -3,7 +3,7 @@ title: "physics and mathematics foundation"
 date: "1997"
 summary: "Undergraduate foundation in physics, mathematics, and early systems development."
 tags: ["physics", "mathematics", "systems"]
-category: professional
+listed: false
 ---
 
 ## Academic Focus

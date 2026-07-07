@@ -3,7 +3,8 @@ title: "defensive growth evolution"
 date: "2025"
 summary: "Q4 2025 strategy transition incorporating bottom-up stock selection via flagship alpha framework; increased tracking error above 4% while preserving risk architecture."
 tags: ["portfolio construction", "defensive growth", "strategy evolution"]
-category: professional
+category: "capabilities"
+content_type: "strategy-brief"
 ---
 
 ## Transition

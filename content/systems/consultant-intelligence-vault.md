@@ -3,6 +3,7 @@ title: "consultant intelligence vault"
 date: "2025-09-01"
 summary: "Wiki-linked knowledge system across major consulting firms: consultant profiles, coverage pods, CRM history analysis, and network-graph dashboards."
 tags: ["consultant channel", "CRM", "distribution intelligence"]
+systems_group: "platform"
 ---
 
 ## Purpose

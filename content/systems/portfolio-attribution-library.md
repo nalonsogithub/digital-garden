@@ -3,6 +3,7 @@ title: "portfolio attribution library"
 date: "2025-08-01"
 summary: "Reusable daily-holdings Brinson-Fachler engine with factor-decile bucketing, look-ahead-safe lagging, and agent-skill packaging for institutional portfolio reviews."
 tags: ["attribution", "portfolio management", "agent skills"]
+systems_group: "research-infrastructure"
 ---
 
 ## Purpose

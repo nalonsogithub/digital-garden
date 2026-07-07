@@ -1,42 +1,35 @@
 ---
-title: "data-driven sales architecture"
+title: "Data-Driven Sales Architecture"
 date: "2026-01-01"
-summary: "Reimagining institutional sales as a data-driven ecosystem: research surfaces opportunities, conversations trigger prepared follow-up, pain points map to targeted outreach."
+summary: "How institutional distribution would run if research, client intelligence, and content production shared one observable pipeline."
 tags: ["sales architecture", "distribution", "research", "AI systems"]
+systems_group: "client-distribution"
 ---
 
-## Core claim
+## The problem
 
-The opportunity in AI-enabled sales is not workflow acceleration alone. It is redesigning how institutional distribution would run if research, client intelligence, and content production were connected in a single data-driven ecosystem.
+Most AI-in-sales projects stop at speed: faster commentary, quicker meeting prep, cleaner first drafts. That helps. It does not change how distribution actually works.
 
-## The common interpretation
+The better question is what sales would look like if the opportunity set were as observable as the manager universe we already study.
 
-Most firms treat AI in sales as a productivity layer: faster commentary, quicker meeting prep, better first drafts. That is useful. It is also incomplete.
+## Three loops
 
-## The cleaner interpretation
+**Conversation to content.** Research turns up a market-structure fact, a competitive oddity, a manager pain point. That becomes a short piece. When a meeting shows genuine interest, the follow-up is already written. The goal is to keep the conversation warm with substance, not a generic leave-behind.
 
-In a data-driven sales process, research is not only input to positioning. It is a sensor network over the opportunity market.
+**Opportunity to target.** When external data shows an allocator problem that maps to something we can solve, the next step is finding who has that problem. Underperforming peer groups, stated mandate constraints, consultant coverage gaps: these are hypotheses, testable the same way we test factor exposure.
 
-Three loops reinforce each other:
+**Pipeline to library.** Every client response and attribution review should compound. The failure mode is one-off brilliance: good work that never becomes reusable capital for the next meeting.
 
-1. **Conversation-to-content.** When research uncovers an interesting anecdote, market-structure fact, or competitive dynamic, it becomes a short piece. When a sales meeting surfaces genuine interest in that topic, the strategist is already prepared with materials to send after the meeting, preserving engagement while the conversation is warm.
+## What sits underneath
 
-2. **Opportunity-to-target.** When research identifies underperforming competitors, manager pain points, or allocator-stated issues in external data, the system can map those findings to the asset owners and consultants most likely to have the corresponding pain point. Outreach becomes targeted rather than broadcast.
-
-3. **Pipeline-to-library.** Every client response, attribution review, and consultant package becomes reusable intellectual capital. The constraint is not idea generation. It is converting analysis into client-ready artifacts fast enough to matter in a live pipeline.
-
-## Systems that implement the model
-
-| Capability | Role in the ecosystem |
+| Piece | Job |
 |---|---|
-| Anomaly-discovery pipeline | Surfaces marketable manager and competitive pain points from frozen universe data |
-| Consultant-intelligence vault | Maps consulting-firm structure, coverage, and CRM history to relationship white space |
-| Sales AI platform | Structured market analysis and commentary tied to live portfolio data |
-| Research-library publishing | Surfaces finished analysis to the firm catalog within a minute of publishing |
-| Document compliance pipeline | Produces branded, disclosure-ready PDFs from any draft format |
+| Anomaly-discovery pipeline | Rank manager-universe pain points worth a note or a call |
+| Consultant-intelligence vault | Map who covers whom, and where our CRM history is thin |
+| Sales AI platform | Structured market and portfolio data for commentary |
+| Research-library publishing | Finished work visible inside a minute, no deploy step |
+| Document compliance pipeline | Branded PDF from any draft, disclosures attached |
 
-## Practical implication
+## Implication
 
-The goal is a sales process that behaves more like quantitative research applied to distribution: hypothesize where pain exists, test with data, prepare the artifact before the meeting, and follow up with precision after interest appears.
-
-That is a different ambition than making existing workflows faster. It is building the infrastructure to run sales as if the opportunity set were observable.
+Operationally, this is distribution run more like research: form a hypothesis, check it against data, walk in prepared, follow up with precision. The infrastructure is the point. Speed without targeting is just a faster version of the same scattershot process.

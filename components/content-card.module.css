@@ -1,11 +1,33 @@
 .card {
   padding: 1.25rem 1.25rem 1.25rem 1.5rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
   border: 1px solid var(--border);
   border-left: 3px solid var(--theme-primary);
   border-radius: 6px;
   background: var(--background);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.cardHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.15rem;
+}
+
+.badge {
+  flex-shrink: 0;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--theme-primary);
+  background: var(--theme-primary-subtle);
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
 }
 
 .card:hover {

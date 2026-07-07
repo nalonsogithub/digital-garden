@@ -1,21 +1,40 @@
 import Link from "next/link";
-import type { ContentFrontmatter } from "@/lib/content";
+import Image from "next/image";
+import {
+  getContentBySlug,
+  contentSectionPath,
+  CONTENT_TYPE_LABELS,
+  type ContentFrontmatter,
+  type ContentSection,
+} from "@/lib/content";
 import { ExternalIcon } from "@/components/icons";
 import styles from "./content-card.module.css";
 
 interface ContentCardProps {
-  section: "systems" | "research" | "writing" | "technical-lineage";
+  section: ContentSection;
   slug: string;
   frontmatter: ContentFrontmatter;
+  linkLabel?: string;
 }
 
-export function ContentCard({ section, slug, frontmatter }: ContentCardProps) {
-  const href = `/${section}/${slug}`;
+function badgeLabel(frontmatter: ContentFrontmatter): string | null {
+  if (frontmatter.publication) return frontmatter.publication;
+  if (frontmatter.content_type) return CONTENT_TYPE_LABELS[frontmatter.content_type];
+  return null;
+}
+
+export function ContentCard({ section, slug, frontmatter, linkLabel = "Read" }: ContentCardProps) {
+  const href = `/${contentSectionPath(section)}/${slug}`;
+  const badge = badgeLabel(frontmatter);
+
   return (
     <article className={styles.card}>
-      <h2 className={styles.cardTitle}>
-        <Link href={href}>{frontmatter.title}</Link>
-      </h2>
+      <div className={styles.cardHeader}>
+        <h2 className={styles.cardTitle}>
+          <Link href={href}>{frontmatter.title}</Link>
+        </h2>
+        {badge && <span className={styles.badge}>{badge}</span>}
+      </div>
       {frontmatter.date && (
         <time className={styles.date} dateTime={frontmatter.date}>
           {frontmatter.date}
@@ -24,16 +43,16 @@ export function ContentCard({ section, slug, frontmatter }: ContentCardProps) {
       <p className={styles.summary}>{frontmatter.summary}</p>
       {frontmatter.tags && frontmatter.tags.length > 0 && (
         <ul className={styles.tags} aria-label="Tags">
-          {frontmatter.tags.map((tag) => (
-            <li key={tag} className={styles.tag}>
-              {tag}
+          {frontmatter.tags.slice(0, 4).map((t) => (
+            <li key={t} className={styles.tag}>
+              {t}
             </li>
           ))}
         </ul>
       )}
       <div className={styles.links}>
         <Link href={href} className={styles.detailLink}>
-          view details
+          {linkLabel}
         </Link>
         {frontmatter.external_url && (
           <a
@@ -44,10 +63,29 @@ export function ContentCard({ section, slug, frontmatter }: ContentCardProps) {
             aria-label="Open external link"
           >
             <ExternalIcon size={16} className={styles.externalIcon} />
-            external link
+            published version
           </a>
         )}
       </div>
     </article>
+  );
+}
+
+interface FeaturedCardProps {
+  section: ContentSection;
+  slug: string;
+  linkLabel: string;
+}
+
+export function FeaturedCard({ section, slug, linkLabel }: FeaturedCardProps) {
+  const item = getContentBySlug(section, slug);
+  if (!item) return null;
+  return (
+    <ContentCard
+      section={section}
+      slug={slug}
+      frontmatter={item.frontmatter}
+      linkLabel={linkLabel}
+    />
   );
 }

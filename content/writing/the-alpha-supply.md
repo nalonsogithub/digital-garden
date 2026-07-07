@@ -2,8 +2,10 @@
 title: "The Alpha Supply"
 date: "2025-12-01"
 summary: "Optimizer-based measurement of how much active risk the S&P 500 can support, what a perfect-foresight allocator would use, and how constraint types change the character of active risk."
-category: institutional-research
+category: "research"
 tags: ["active management", "optimization", "tracking error", "S&P 500"]
+research_group: "recent"
+content_type: "white-paper"
 ---
 
 ## Core claim

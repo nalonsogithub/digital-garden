@@ -3,7 +3,8 @@ title: "performance attribution case study"
 date: "2025"
 summary: "Defensive Growth International strategy outperformed benchmark by approximately 5% in 2025; example of performance attribution and client communication."
 tags: ["performance", "defensive growth", "attribution"]
-category: professional
+category: "capabilities"
+content_type: "case-study"
 ---
 
 ## Example

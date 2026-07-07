@@ -2,8 +2,10 @@
 title: "Statistical Significance of Manager Track Records"
 date: "2026-01-15"
 summary: "Applied Lo (2002) inference to thousands of institutional manager track records across five universes to identify which information ratios are distinguishable from luck."
-category: institutional-research
+category: "research"
 tags: ["manager evaluation", "information ratio", "statistics", "eVestment"]
+research_group: "recent"
+content_type: "white-paper"
 ---
 
 ## Core claim

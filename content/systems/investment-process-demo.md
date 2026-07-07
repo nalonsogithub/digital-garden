@@ -1,8 +1,9 @@
 ---
-title: "investment process demo"
+title: "Investment Process Demo"
 date: "2025-01-01"
 summary: "Outward-facing interface into quantitative model architecture and portfolio optimization logic."
 tags: ["quantitative investing", "optimization", "model transparency"]
+systems_group: "client-distribution"
 ---
 
 ## Purpose

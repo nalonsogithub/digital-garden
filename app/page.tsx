@@ -1,42 +1,85 @@
+import Image from "next/image";
 import Link from "next/link";
-import { PageHeader } from "@/components/page-header";
-import { DocumentIcon, FolderIcon, PenIcon } from "@/components/icons";
+import { FeaturedCard } from "@/components/content-card";
 import { SITE_TITLE, SITE_BYLINE } from "@/lib/site";
 import styles from "./home.module.css";
 
 export default function Home() {
   return (
-    <main>
-      <PageHeader title={SITE_TITLE} byline={SITE_BYLINE} variant="hero" />
-      <p className={styles.intro}>
-        I manage institutional portfolios and lead the firm&apos;s research-to-revenue translation layer:
-        turning quantitative work into client-ready artifacts, consultant dialogue, and systems that
-        scale both.
-      </p>
-      <p className={styles.intro}>
-        The constraint in institutional distribution is not idea generation. It is converting analysis
-        into materials that matter in a live pipeline. My work spans portfolio construction, authored
-        research, and the architecture behind a data-driven sales process.
-      </p>
-      <nav className={styles.structuralNav} aria-label="Audience paths">
-        <Link href="/resume">For allocators &amp; CIOs</Link>
-        <Link href="/systems">For distribution &amp; sales leadership</Link>
-        <Link href="/systems/technology-platform-architecture">For technology leadership</Link>
+    <main className={styles.main}>
+      <section className={styles.hero} aria-label="Introduction">
+        <div className={styles.photoWrap}>
+          <Image
+            src="/images/nick-alonso.png"
+            alt="Nicholas Alonso"
+            width={160}
+            height={160}
+            className={styles.photo}
+            priority
+          />
+        </div>
+        <div className={styles.heroText}>
+          <p className={styles.name}>Nicholas Alonso, CFA</p>
+          <h1 className={styles.title}>{SITE_TITLE}</h1>
+          <p className={styles.byline}>{SITE_BYLINE}</p>
+        </div>
+      </section>
+
+      <div className={styles.prose}>
+        <p className={styles.lead}>
+          I manage institutional portfolios and run the firm&apos;s research-to-revenue layer:
+          authored work, client-ready responses, and the systems behind both.
+        </p>
+        <p className={styles.lead}>
+          The constraint in distribution is not idea generation. It is getting analysis into
+          materials that matter while a pipeline is live. That is the problem I have been building
+          toward, in portfolios and in platforms.
+        </p>
+      </div>
+
+      <nav className={styles.doors} aria-label="Start here">
+        <Link href="/resume" className={styles.door}>
+          <span className={styles.doorTitle}>Track record</span>
+          <span className={styles.doorDesc}>
+            Mandates raised, portfolios managed, full career arc.
+          </span>
+        </Link>
+        <Link href="/research" className={styles.door}>
+          <span className={styles.doorTitle}>Research</span>
+          <span className={styles.doorDesc}>
+            Peer-reviewed work, recent papers, strategy briefs.
+          </span>
+        </Link>
+        <Link href="/systems" className={styles.door}>
+          <span className={styles.doorTitle}>Platforms</span>
+          <span className={styles.doorDesc}>
+            Systems for attribution, distribution, and research at scale.
+          </span>
+        </Link>
       </nav>
-      <nav className={styles.ctas} aria-label="Primary sections">
-        <Link href="/resume" className={styles.cta}>
-          <DocumentIcon size={18} className={styles.ctaIcon} />
-          View Resume
-        </Link>
-        <Link href="/systems" className={styles.cta}>
-          <FolderIcon size={18} className={styles.ctaIcon} />
-          View Systems
-        </Link>
-        <Link href="/writing" className={styles.cta}>
-          <PenIcon size={18} className={styles.ctaIcon} />
-          View Writing
-        </Link>
-      </nav>
+
+      <section className={styles.featured} aria-labelledby="featured-heading">
+        <h2 id="featured-heading" className={styles.sectionTitle}>
+          Selected work
+        </h2>
+        <div className={styles.featuredGrid}>
+          <FeaturedCard section="research" slug="the-alpha-supply" linkLabel="Read summary" />
+          <FeaturedCard
+            section="systems"
+            slug="data-driven-sales-architecture"
+            linkLabel="View architecture"
+          />
+          <FeaturedCard
+            section="research"
+            slug="defensive-growth-architecture"
+            linkLabel="Read brief"
+          />
+        </div>
+      </section>
+
+      <p className={styles.howLink}>
+        <Link href="/operating-model">How the pieces fit together</Link>
+      </p>
     </main>
   );
 }

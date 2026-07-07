@@ -17,6 +17,11 @@
   color: var(--muted);
 }
 
+.publication {
+  font-weight: 500;
+  color: var(--foreground);
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;

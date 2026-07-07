@@ -20,7 +20,7 @@
           },
           {
             "text": "Support defensive growth and multi-asset mandates with attribution verification, performance narrative, and client-facing analytical responses.",
-            "link": { "section": "writing", "slug": "performance-attribution-case-study", "label": "case study" }
+            "link": { "section": "research", "slug": "performance-attribution-case-study", "label": "case study" }
           }
         ]
       },
@@ -32,7 +32,7 @@
           },
           {
             "text": "Authored or significantly contributed to two dozen client-facing written deliverables in the last nine months: meeting preparation, post-meeting response packages, bespoke analytical answers, and consultant-ready research.",
-            "link": { "section": "writing", "slug": "more-risk-less-reward", "label": "research program" }
+            "link": { "section": "research", "slug": "more-risk-less-reward", "label": "research program" }
           },
           {
             "text": "Deliver quarterly strategy commentary and symposium scripts; guest lectures at Duke University with prior presentations at MIT and Oxford."
@@ -44,11 +44,11 @@
         "bullets": [
           {
             "text": "Built a connected research program on market structure and active management: where active risk is rewarded, whether track records are statistically distinguishable from luck, and how benchmark concentration has changed the opportunity set.",
-            "link": { "section": "writing", "slug": "the-alpha-supply", "label": "alpha supply paper" }
+            "link": { "section": "research", "slug": "the-alpha-supply", "label": "alpha supply paper" }
           },
           {
             "text": "Authored papers on tracking-error decomposition, small-cap market structure, Korea discount repricing, and active-versus-passive dynamics across five equity universes; several taken through compliance to external distribution.",
-            "link": { "section": "writing", "slug": "active-vs-passive-five-universe", "label": "five-universe study" }
+            "link": { "section": "research", "slug": "active-vs-passive-five-universe", "label": "five-universe study" }
           },
           {
             "text": "Wrote rapid-response macro and geopolitical notes during the early-2026 escalation, grounding headlines in market transmission mechanics."
@@ -59,7 +59,7 @@
         "title": "Data-Driven Sales Architecture",
         "bullets": [
           {
-            "text": "The objective is not faster workflows alone. It is reimagining how institutional sales would run in a fully data-driven ecosystem: research surfaces interesting anecdotes and competitive pain points; conversations trigger prepared follow-up materials; opportunities map to the asset owners and consultants most likely to care.",
+            "text": "Building toward distribution run on observable data: research surfaces a topic, meetings test interest, follow-up goes out while it still matters. Pain points in external data map to the consultants and asset owners most likely to care.",
             "link": { "section": "systems", "slug": "data-driven-sales-architecture", "label": "architecture" }
           },
           {
@@ -76,15 +76,8 @@
         "title": "AI Systems & Operating Leverage",
         "bullets": [
           {
-            "text": "Designed and implemented institutional AI-enabled platforms: Investment Process Demo (model transparency and portfolio traceability) and Sales AI Platform (market analysis, agentic commentary, competitive intelligence).",
-            "link": { "section": "systems", "slug": "investment-process-demo", "label": "process demo" }
-          },
-          {
-            "text": "Built restriction-intelligence monitoring for values-based mandates, a document formatting and compliance pipeline, and a research-library publishing system with no deploy step.",
-            "link": { "section": "systems", "slug": "restriction-intelligence", "label": "restriction intelligence" }
-          },
-          {
-            "text": "Codified writing-voice and agent skills so drafts arrive closer to final; packaged attribution, screening, and publishing as repeatable workflows rather than one-off automation."
+            "text": "Built investment process demo and sales AI platform; restriction-intelligence monitoring, compliance publishing pipeline, and research-library catalog with no deploy step.",
+            "link": { "section": "systems", "slug": "investment-process-demo", "label": "platforms" }
           }
         ]
       }
@@ -111,15 +104,15 @@
         "bullets": [
           {
             "text": "Designed scalable stock-level risk parity framework incorporating multidimensional risk allocation constraints; reduced portfolio construction runtime from hours to seconds.",
-            "link": { "section": "writing", "slug": "stock-level-risk-parity", "label": "technical detail" }
+            "link": { "section": "research", "slug": "stock-level-risk-parity", "label": "technical detail" }
           },
           {
             "text": "Architected Defensive Equity platform spanning U.S., International, Small Cap, and Emerging Markets strategies.",
-            "link": { "section": "writing", "slug": "defensive-equity-platform", "label": "research detail" }
+            "link": { "section": "research", "slug": "defensive-equity-platform", "label": "research detail" }
           },
           {
             "text": "Designed and launched Defensive Growth suite in 2019; transitioned framework to incorporate bottom-up stock selection while preserving risk architecture.",
-            "link": { "section": "writing", "slug": "defensive-growth-architecture", "label": "defensive growth detail" }
+            "link": { "section": "research", "slug": "defensive-growth-architecture", "label": "defensive growth detail" }
           },
           {
             "text": "Published nine external research papers and 100+ internal research memoranda."
@@ -137,7 +130,7 @@
           },
           {
             "text": "Defensive Growth International strategy outperformed benchmark by approximately 5% in 2025.",
-            "link": { "section": "writing", "slug": "performance-attribution-case-study", "label": "performance detail" }
+            "link": { "section": "research", "slug": "performance-attribution-case-study", "label": "performance detail" }
           }
         ]
       }
@@ -158,7 +151,7 @@
       },
       {
         "text": "Architecture materially reduced unintended beta exposure during systemic stress. In 2008, the strategy delivered approximately flat performance and ranked at the top of its peer group.",
-        "link": { "section": "writing", "slug": "mellon-capital-long-short-architecture", "label": "research detail" }
+        "link": { "section": "research", "slug": "mellon-capital-long-short-architecture", "label": "research detail" }
       }
     ],
     "subsections": []

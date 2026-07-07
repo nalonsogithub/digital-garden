@@ -2,8 +2,10 @@
 title: "Active vs Passive: A Five-Universe Retrospective"
 date: "2026-02-01"
 summary: "Large client-driven study across five equity universes on when and where active management has paid, including benchmark-integrity questions and quant-versus-fundamental splits."
-category: institutional-research
+category: "research"
 tags: ["active management", "passive", "eVestment", "institutional research"]
+research_group: "recent"
+content_type: "white-paper"
 ---
 
 ## Core claim

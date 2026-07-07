@@ -5,7 +5,8 @@ summary: "A primer on quantum computing: how physical law replaces brute-force s
 pdf: "/papers/the-resolution-of-reality.docx"
 external_url: ""
 tags: ["quantum", "physics", "writing"]
-category: personal
+category: "essays"
+content_type: "essay"
 ---
 
 The Resolution of Reality 

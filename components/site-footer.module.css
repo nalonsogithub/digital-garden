@@ -1,0 +1,19 @@
+.footer {
+  margin-top: auto;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.line {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.line a {
+  color: var(--muted);
+}
+
+.line a:hover {
+  color: var(--theme-primary);
+}

@@ -4,7 +4,8 @@ date: "2024-12-01"
 summary: "Guest lecture and internal strategy on where AI compresses mechanical research work while preserving the judgment layer in institutional asset management."
 external_url: ""
 tags: ["ai", "asset-management", "education"]
-category: personal
+category: "essays"
+content_type: "lecture"
 ---
 
 ## Core claim

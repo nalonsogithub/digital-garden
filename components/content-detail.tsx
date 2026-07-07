@@ -18,6 +18,9 @@ export function ContentDetail({ section, slug, item }: ContentDetailProps) {
         <header className={styles.header}>
           <h1 className={styles.title}>{frontmatter.title}</h1>
           <div className={styles.meta}>
+            {frontmatter.publication && (
+              <span className={styles.publication}>{frontmatter.publication}</span>
+            )}
             {frontmatter.date && (
               <time dateTime={frontmatter.date}>{frontmatter.date}</time>
             )}
@@ -53,7 +56,9 @@ export function ContentDetail({ section, slug, item }: ContentDetailProps) {
             </a>
           )}
         </div>
-        <MarkdownRenderer content={body} />
+        <div className="prose">
+          <MarkdownRenderer content={body} />
+        </div>
       </article>
     </main>
   );

@@ -2,8 +2,10 @@
 title: "Repricing the Korea Discount"
 date: "2026-03-01"
 summary: "Market-structure paper testing whether Korea's valuation discount is genuinely narrowing under governance reform or is an AI-semiconductor concentration artifact, with cross-sectional evidence across Korea, Japan, and Taiwan."
-category: institutional-research
+category: "research"
 tags: ["Korea", "market structure", "governance", "Asia equities"]
+research_group: "recent"
+content_type: "white-paper"
 ---
 
 ## Core claim

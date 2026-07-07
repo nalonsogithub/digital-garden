@@ -7,6 +7,7 @@ import {
   getResumeTechnologyLeverage,
   getResumeExecutiveSummary,
   getResumePortfolioExperience,
+  contentSectionPath,
 } from "@/lib/content";
 import { PageHeader } from "@/components/page-header";
 import { ResumePrintButton } from "@/components/resume-print-button";
@@ -89,7 +90,7 @@ export default function ResumePage() {
                               <>
                                 {" "}
                                 <Link
-                                  href={`/${bullet.link.section}/${bullet.link.slug}`}
+                                  href={`/${contentSectionPath(bullet.link.section)}/${bullet.link.slug}`}
                                   className={styles.detailLink}
                                 >
                                   {bullet.link.label}
@@ -111,7 +112,7 @@ export default function ResumePage() {
                         <>
                           {" "}
                           <Link
-                            href={`/${bullet.link.section}/${bullet.link.slug}`}
+                            href={`/${contentSectionPath(bullet.link.section)}/${bullet.link.slug}`}
                             className={styles.detailLink}
                           >
                             {bullet.link.label}
@@ -160,7 +161,7 @@ export default function ResumePage() {
               <li key={i} className={styles.educationItem}>
                 {item.link ? (
                   <Link
-                    href={`/${item.link.section}/${item.link.slug}`}
+                    href={`/${contentSectionPath(item.link.section)}/${item.link.slug}`}
                     className={styles.educationLink}
                   >
                     {item.link.label}
@@ -177,8 +178,8 @@ export default function ResumePage() {
       <section className={styles.section} aria-label="Publications">
         <h2 className={styles.sectionTitle}>Publications</h2>
         <p className={styles.paragraph}>
-          <Link href="/writing" className={styles.sectionLink}>
-            View publications
+          <Link href="/research" className={styles.sectionLink}>
+            View research &amp; work
           </Link>
         </p>
       </section>
