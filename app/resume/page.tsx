@@ -49,9 +49,11 @@ export default function ResumePage() {
             <p className={styles.paragraph}>{portfolioExperience}</p>
           )}
           <p className={styles.introLinks}>
-            <Link href="/operating-model">Integrated capability model</Link>
+            <Link href="/operating-model">Operating model</Link>
             {" · "}
-            <Link href="/product-lifecycle">Product lifecycle architecture</Link>
+            <Link href="/cross-vertical-strategy">Cross-vertical strategy</Link>
+            {" · "}
+            <Link href="/product-lifecycle">Product lifecycle</Link>
             {" · "}
             <Link href="/systems/data-driven-sales-architecture">Data-driven sales architecture</Link>
           </p>

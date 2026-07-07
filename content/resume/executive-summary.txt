@@ -3,4 +3,5 @@ Up to $8B in multi-asset portfolios managed at peak; $700M+ raised independently
 Client responses for pensions, endowments, foundations, and sovereign institutions, usually inside a week of the ask.
 AI-enabled platforms for investment demonstration, sales intelligence, attribution, compliance screening, and research publishing.
 Deliverables that flag measurement artifacts and weaker robustness before a client does.
-Distribution architecture aimed at a data-driven sales process: research surfaces opportunities, meetings trigger follow-up, pain points map to targets. Sales-meeting cadence with distribution colleagues has roughly tripled to quadrupled since mid-2025.
+Distribution architecture aimed at a data-driven sales process: research surfaces opportunities, meetings trigger follow-up, pain points map to targets.
+Sales-meeting cadence with distribution colleagues has roughly tripled to quadrupled since mid-2025.
