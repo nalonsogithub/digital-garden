@@ -1,3 +1,5 @@
+Nicholas Alonso's living resume and research library. See [CHANGELOG.md](CHANGELOG.md) for a running log of what's changed and when.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
