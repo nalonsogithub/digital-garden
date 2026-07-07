@@ -1,5 +1,5 @@
 ---
-title: "analytical finance training"
+title: "Analytical Finance Training"
 date: "2007"
 summary: "Graduate training in analytical finance under leading academic researchers."
 tags: ["finance", "mba", "quantitative research"]

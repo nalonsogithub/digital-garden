@@ -1,7 +1,7 @@
 ---
-title: "product lifecycle architecture"
+title: "Product Lifecycle Architecture"
 date: "2025-01-01"
-summary: "End-to-end product lifecycle ownership in institutional asset management—from idea inception through launch, sales, and post-launch positioning."
+summary: "End-to-end product lifecycle ownership in institutional asset management, from idea inception through launch, sales, and post-launch positioning."
 tags: ["product lifecycle", "institutional", "asset management"]
 ---
 
@@ -29,4 +29,4 @@ Experience includes:
 
 ## Institutional leverage
 
-This is institutional leverage through domain expertise, systems thinking, cross-functional integration, and AI-enabled operational efficiency—not a narrow role.
+The scope combines domain expertise, systems thinking, cross-functional integration, and AI-enabled operational efficiency. That is a wider mandate than a narrow product role implies.

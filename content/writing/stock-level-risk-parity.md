@@ -1,5 +1,5 @@
 ---
-title: "stock-level risk parity"
+title: "Stock-Level Risk Parity"
 date: "2011"
 summary: "Scalable multidimensional risk allocation framework for large equity universes; reduced portfolio construction runtime from hours to seconds."
 tags: ["portfolio construction", "optimization", "risk parity"]

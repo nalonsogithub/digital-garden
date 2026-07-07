@@ -1,5 +1,5 @@
 ---
-title: "technology platform architecture"
+title: "Technology Platform Architecture"
 date: "2025-01-01"
 summary: "Model-agnostic, cross-platform AI and quantitative systems design."
 tags: ["ai architecture", "systems integration", "multi-model"]
@@ -20,7 +20,7 @@ Agents are compartmentalized by function: research synthesis, commentary generat
 
 ## Evolution from middleware systems to modern AI agent frameworks
 
-Prior experience in distributed systems and middleware—message queues, service boundaries, integration layers—translates directly to AI agent design. The same principles apply: clear boundaries, defined contracts, failure isolation, and observability. Modern agent frameworks are the next iteration of middleware: they mediate between human intent, data sources, and model endpoints.
+Prior experience in distributed systems and middleware (message queues, service boundaries, integration layers) translates directly to AI agent design. The same principles apply: clear boundaries, defined contracts, failure isolation, and observability. Modern agent frameworks are the next iteration of middleware. They mediate between human intent, data sources, and model endpoints.
 
 ## Cross-platform integration across research, sales, and portfolio systems
 

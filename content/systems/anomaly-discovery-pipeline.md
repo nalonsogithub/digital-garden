@@ -1,5 +1,5 @@
 ---
-title: "anomaly discovery pipeline"
+title: "Anomaly Discovery Pipeline"
 date: "2025-11-01"
 summary: "YAML-driven auto-research loop over frozen manager-universe data that surfaces marketable manager anomalies as ranked candidates for notes and targeted outreach."
 tags: ["manager research", "sales intelligence", "eVestment", "automation"]

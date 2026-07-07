@@ -112,8 +112,14 @@
 
 .featuredGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
+}
+
+@media (min-width: 48rem) {
+  .featuredGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .howLink {

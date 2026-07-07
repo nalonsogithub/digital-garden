@@ -1,5 +1,5 @@
 ---
-title: "defensive equity platform"
+title: "Defensive Equity Platform"
 date: "2014"
 summary: "Long-only, low-volatility equity platform spanning U.S., International, Small Cap, and Emerging Markets; competitive downside protection across cycles."
 tags: ["portfolio construction", "low volatility", "defensive equity"]

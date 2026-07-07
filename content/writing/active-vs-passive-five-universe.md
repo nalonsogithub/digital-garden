@@ -18,7 +18,7 @@ eVestment data across five equity universes for an official-sector institution. 
 
 ## Process
 
-Taken through compliance to a distribution-ready package, then re-tailored for a second institutional client. Demonstrates the translation layer: one research core, multiple client-ready artifacts.
+Taken through compliance to a distribution-ready package, then re-tailored for a second institutional client: one research core produced two distinct client-ready artifacts.
 
 ## Implication
 

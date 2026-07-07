@@ -1,5 +1,5 @@
 ---
-title: "stock-level risk parity architecture"
+title: "Stock-Level Risk Parity Architecture"
 date: "2011"
 summary: "Development of a scalable multidimensional risk allocation framework for large equity universes."
 tags: ["portfolio construction", "optimization", "risk parity"]

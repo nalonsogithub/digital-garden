@@ -1,5 +1,5 @@
 ---
-title: "ai in asset management"
+title: "AI in Asset Management"
 date: "2024-12-01"
 summary: "Guest lecture and internal strategy on where AI compresses mechanical research work while preserving the judgment layer in institutional asset management."
 external_url: ""

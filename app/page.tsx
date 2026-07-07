@@ -27,8 +27,9 @@ export default function Home() {
 
       <div className={styles.prose}>
         <p className={styles.lead}>
-          I manage institutional portfolios and run the firm&apos;s research-to-revenue layer:
-          authored work, client-ready responses, and the systems behind both.
+          I manage institutional portfolios and write the research behind them: papers,
+          client-ready responses, and the systems that turn analysis into material a team
+          can use.
         </p>
         <p className={styles.lead}>
           The constraint in distribution is not idea generation. It is getting analysis into
@@ -39,7 +40,7 @@ export default function Home() {
 
       <nav className={styles.doors} aria-label="Start here">
         <Link href="/resume" className={styles.door}>
-          <span className={styles.doorTitle}>Track record</span>
+          <span className={styles.doorTitle}>Resume</span>
           <span className={styles.doorDesc}>
             Mandates raised, portfolios managed, full career arc.
           </span>

@@ -1,5 +1,5 @@
 ---
-title: "physics and mathematics foundation"
+title: "Physics and Mathematics Foundation"
 date: "1997"
 summary: "Undergraduate foundation in physics, mathematics, and early systems development."
 tags: ["physics", "mathematics", "systems"]

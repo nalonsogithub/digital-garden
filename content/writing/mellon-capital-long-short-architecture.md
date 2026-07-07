@@ -1,5 +1,5 @@
 ---
-title: "Mellon Capital long-short small cap architecture"
+title: "Mellon Capital Long-Short Small Cap Architecture"
 date: "2008"
 summary: "Portfolio optimization constraint maximizing differentiation from common institutional factor exposures; materially reduced unintended beta during 2008 stress."
 tags: ["portfolio construction", "long-short", "factor crowding"]
