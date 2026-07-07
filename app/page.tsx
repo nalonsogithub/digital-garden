@@ -27,14 +27,18 @@ export default function Home() {
 
       <div className={styles.prose}>
         <p className={styles.lead}>
-          I manage institutional portfolios and write the research behind them: papers,
-          client-ready responses, and the systems that turn analysis into material a team
-          can use.
+          As Global Strategist, I apply three backgrounds to this role: quantitative research,
+          software and systems architecture, and years of presenting that research directly to
+          clients and consultants. Artificial intelligence has created a genuine opening in how
+          institutional distribution can work, and we are moving on it early. My aim is to help
+          define what a world-class distribution effort looks like in the new era, and to build it.
         </p>
         <p className={styles.lead}>
-          The constraint in distribution is not idea generation. It is getting analysis into
-          materials that matter while a pipeline is live. That is the problem I have been building
-          toward, in portfolios and in platforms.
+          The design goal is an inference layer for distribution: research, client history, and
+          meeting intelligence architected into a collective asset serving the full life cycle of
+          the effort, from targeting opportunities through meeting preparation, follow-up, and
+          client service. It is built to compound with every interaction, and to become
+          foundational to everyone who sells at the firm.
         </p>
       </div>
 
