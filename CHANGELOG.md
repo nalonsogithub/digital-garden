@@ -6,6 +6,11 @@ Entries from 2026-07-07 onward were made with Claude Code and are described in
 detail below. Earlier entries predate that workflow and are summarized from
 git history only.
 
+## 2026-07-07 — Rewrite homepage intro around the Distribution 2.0 vision (`2c49b9a`)
+
+- Replaced the portfolio-manager/researcher framing on the homepage with a single strategist throughline: three backgrounds (quantitative research, systems architecture, client-facing communication) applied to modernizing institutional distribution, framed as leading into the AI era rather than catching up.
+- Second paragraph now describes the inference-layer design goal across the full opportunity-to-service life cycle (targeting, meeting prep, follow-up, client service), written in design-intent tense since it hasn't been built yet.
+
 ## 2026-07-07 - Split strategy architectures from production platforms
 
 - Renamed the Research page's platform bucket to "Architectures" and retitled the Defensive Equity and Defensive Growth entries as architecture/platform briefs.
