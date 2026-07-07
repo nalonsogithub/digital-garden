@@ -17,9 +17,9 @@ Portfolio reviews are recurring, high-stakes, and labor-intensive. The value is 
 - Portfolio snapshot layer for sleeve decompositions (beta leg vs alpha overlay)
 - Packaged as a repeatable agent skill with a validated account registry
 
-## Client-facing use
+## Internal use, client-facing output
 
-Built portfolio reviews with full attribution for faith-based endowments, university endowment systems, defensive-growth verification requested by the performance team, and prospect meetings.
+Used internally by portfolio managers and analysts to build portfolio reviews with full attribution for faith-based endowments, university endowment systems, defensive-growth verification requested by the performance team, and prospect meetings. The system itself is not client-facing. What it enables is speed: a PM or analyst can pull a verified answer on the fly during a call or meeting rather than promising a follow-up.
 
 Episode-level narratives tie attribution cuts to verified news events rather than generic factor language.
 
