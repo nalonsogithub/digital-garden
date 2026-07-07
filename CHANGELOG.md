@@ -6,6 +6,12 @@ Entries from 2026-07-07 onward were made with Claude Code and are described in
 detail below. Earlier entries predate that workflow and are summarized from
 git history only.
 
+## 2026-07-07 - Reorganize Platforms page into navigable system groups
+
+- Replaced the static Platforms page with searchable filters for core platforms, distribution intelligence, and research infrastructure.
+- Reframed links from "View system" to "See description" so cards set the right expectation.
+- Hid non-platform architecture stubs, renamed Consultant Intelligence Vault to Consultant Intelligence Map, reframed Portfolio Attribution Library as a Live Attribution System, and added Meeting Preparation Playbooks.
+
 ## 2026-07-07 - Add research filters and reorganize career platform work
 
 - Replaced the static Research index with a searchable, filterable explorer for recent research, peer-reviewed publications, career platforms, essays, and presentations.

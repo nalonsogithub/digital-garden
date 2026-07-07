@@ -3,7 +3,8 @@ title: "Technology Platform Architecture"
 date: "2025-01-01"
 summary: "Model-agnostic, cross-platform AI and quantitative systems design."
 tags: ["ai architecture", "systems integration", "multi-model"]
-systems_group: "platform"
+systems_group: "core-platforms"
+listed: false
 ---
 
 ## Philosophy of model-agnostic design

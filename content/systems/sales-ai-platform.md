@@ -1,14 +1,14 @@
 ---
 title: "Sales AI Platform"
 date: "2025-01-01"
-summary: "Modular sales intelligence system: structured market data, agentic commentary, and competitive analysis as components of a data-driven distribution architecture."
+summary: "Core AI platform connecting structured market data, agentic commentary, competitive analysis, and distribution workflows."
 tags: ["sales enablement", "llm", "market analysis", "competitive intelligence"]
-systems_group: "client-distribution"
+systems_group: "core-platforms"
 ---
 
 ## Purpose
 
-One component in a broader data-driven sales architecture. The platform connects structured investment data to client-facing commentary and competitive positioning. It is not a standalone productivity tool.
+Core platform connecting structured investment data to client-facing commentary, competitive positioning, and meeting follow-up. It is not a standalone productivity tool; it is the data and commentary layer that makes distribution more observable.
 
 ## Architecture
 

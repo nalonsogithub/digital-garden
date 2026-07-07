@@ -3,7 +3,8 @@ title: "Data-Driven Sales Architecture"
 date: "2026-01-01"
 summary: "How institutional distribution would run if research, client intelligence, and content production shared one observable pipeline."
 tags: ["sales architecture", "distribution", "research", "AI systems"]
-systems_group: "client-distribution"
+systems_group: "distribution-intelligence"
+listed: false
 ---
 
 ## The problem

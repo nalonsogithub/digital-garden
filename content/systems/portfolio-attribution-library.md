@@ -1,14 +1,14 @@
 ---
-title: "Portfolio Attribution Library"
+title: "Live Attribution System"
 date: "2025-08-01"
-summary: "Reusable daily-holdings Brinson-Fachler engine with factor-decile bucketing, look-ahead-safe lagging, and agent-skill packaging for institutional portfolio reviews."
-tags: ["attribution", "portfolio management", "agent skills"]
-systems_group: "research-infrastructure"
+summary: "Live attribution platform that lets portfolio managers and distribution teams ask what drove portfolio results over different periods and get usable answers on the fly."
+tags: ["attribution", "portfolio management", "distribution", "agent skills"]
+systems_group: "core-platforms"
 ---
 
 ## Purpose
 
-Portfolio reviews are recurring, high-stakes, and labor-intensive. The value is not attribution for its own sake. It is reducing the distance between portfolio results and client-ready narrative.
+Portfolio reviews are recurring, high-stakes, and labor-intensive. The value is not attribution for its own sake. It is letting portfolio managers and distribution teams ask what drove a portfolio at a given time, over a given period, and receive an answer that can be turned into a client-ready narrative.
 
 ## Capabilities
 
@@ -25,4 +25,4 @@ Episode-level narratives tie attribution cuts to verified news events rather tha
 
 ## Strategic value
 
-Gives portfolio managers and client-facing teams a common analytical view, lowering the recurring cost of producing macro portfolio review materials while preserving PM judgment on interpretation.
+Gives portfolio managers and client-facing teams a common analytical view, lowering the recurring cost of producing macro portfolio review materials while preserving PM judgment on interpretation. Like the investment process demo, the system turns otherwise hidden analytical machinery into something navigable in real time.

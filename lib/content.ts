@@ -22,7 +22,7 @@ export type ContentType =
   | "lecture"
   | "presentation";
 
-export type SystemsGroup = "client-distribution" | "research-infrastructure" | "platform";
+export type SystemsGroup = "core-platforms" | "distribution-intelligence" | "research-infrastructure";
 
 export interface ContentFrontmatter {
   title: string;
@@ -221,16 +221,16 @@ export const CONTENT_TYPE_LABELS: Record<ContentType, string> = {
 };
 
 export const SYSTEMS_GROUP_LABELS: Record<SystemsGroup, { title: string; description: string }> = {
-  "client-distribution": {
-    title: "Client & distribution",
-    description: "What prospects and clients see in meetings and follow-up.",
+  "core-platforms": {
+    title: "Core platforms",
+    description: "Interactive systems that expose investment process, sales intelligence, and portfolio attribution in usable form.",
+  },
+  "distribution-intelligence": {
+    title: "Distribution intelligence",
+    description: "Systems that help prepare for consultant, prospect, and client conversations with better targeting and context.",
   },
   "research-infrastructure": {
     title: "Research infrastructure",
-    description: "What makes institutional research and reviews repeatable.",
-  },
-  platform: {
-    title: "Platform architecture",
-    description: "How the pieces connect across research and distribution.",
+    description: "Repeatable infrastructure for compliance, manager-universe research, and evidence-backed portfolio work.",
   },
 };

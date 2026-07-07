@@ -1,9 +1,9 @@
 ---
-title: "Consultant Intelligence Vault"
+title: "Consultant Intelligence Map"
 date: "2025-09-01"
-summary: "Wiki-linked knowledge system across major consulting firms: consultant profiles, coverage pods, CRM history analysis, and network-graph dashboards."
+summary: "Distribution intelligence map across major consulting firms: consultant profiles, coverage pods, CRM history analysis, and network-graph views of relationship white space."
 tags: ["consultant channel", "CRM", "distribution intelligence"]
-systems_group: "platform"
+systems_group: "distribution-intelligence"
 ---
 
 ## Purpose
@@ -12,7 +12,7 @@ Institutional distribution runs through consultants. The practical question is n
 
 ## Architecture
 
-A wiki-linked knowledge system covering seven major consulting firms:
+A mapped knowledge system covering seven major consulting firms:
 
 - Consultant profiles with provenance-tracked evidence
 - Client and coverage-pod pages
@@ -25,6 +25,6 @@ The CRM analysis quantified relationship aging and channel white space: where th
 
 ## Strategic value
 
-This is the distribution-side counterpart to manager-universe research. One pipeline studies competitive manager dynamics. The other studies who in the consultant channel is most likely to care about a given finding.
+This is the distribution-side counterpart to manager-universe research. One pipeline studies competitive manager dynamics. The other maps who in the consultant channel is most likely to care about a given finding.
 
 Together they support targeted outreach rather than undifferentiated coverage.
