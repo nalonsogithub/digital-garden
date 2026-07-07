@@ -6,6 +6,12 @@ Entries from 2026-07-07 onward were made with Claude Code and are described in
 detail below. Earlier entries predate that workflow and are summarized from
 git history only.
 
+## 2026-07-07 - Add peer-reviewed publication summaries and request-copy links
+
+- Expanded all nine peer-reviewed research pages from placeholder stubs into publication pages with real executive summaries drawn from the local publication summary file.
+- Added a `request_email` frontmatter field and rendered "request a copy" links on research cards and detail pages, so the site can offer one-on-one email requests without making PDFs downloadable.
+- Corrected several publication badges/years to match the supplied publication metadata.
+
 ## 2026-07-07 — Surface strategy pages on homepage, add operating-model maturity section, plan research-section cleanup (`cd0ebf0`)
 
 - Homepage now links to all three strategy pages (operating model, cross-vertical strategy, product lifecycle) as visible pills instead of one muted link to just the operating model. `cross-vertical-strategy` previously had zero inbound links anywhere on the site.

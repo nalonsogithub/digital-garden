@@ -29,6 +29,7 @@ export interface ContentFrontmatter {
   date?: string;
   pdf?: string;
   external_url?: string;
+  request_email?: string;
   tags?: string[];
   category?: WritingCategory;
   /** Research only: recent institutional work vs peer-reviewed publications. */

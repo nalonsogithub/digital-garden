@@ -31,8 +31,13 @@ function renderBody(body: string) {
   });
 }
 
-export function ContentDetail({ section, slug, item }: ContentDetailProps) {
+export function ContentDetail({ item }: ContentDetailProps) {
   const { frontmatter, body } = item;
+  const requestHref = frontmatter.request_email
+    ? `mailto:${frontmatter.request_email}?subject=${encodeURIComponent(
+        `Paper request: ${frontmatter.title}`
+      )}`
+    : null;
   return (
     <main>
       <article>
@@ -74,6 +79,12 @@ export function ContentDetail({ section, slug, item }: ContentDetailProps) {
             >
               <ExternalIcon size={16} className={styles.buttonIcon} />
               view published version
+            </a>
+          )}
+          {requestHref && (
+            <a href={requestHref} className={styles.secondaryButton}>
+              <ExternalIcon size={16} className={styles.buttonIcon} />
+              request a copy
             </a>
           )}
         </div>

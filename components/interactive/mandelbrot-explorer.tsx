@@ -70,7 +70,8 @@ export function MandelbrotExplorer() {
   }, [view]);
 
   useEffect(() => {
-    draw();
+    const frame = window.requestAnimationFrame(draw);
+    return () => window.cancelAnimationFrame(frame);
   }, [draw]);
 
   const handleClick = (e: React.MouseEvent<HTMLCanvasElement>) => {

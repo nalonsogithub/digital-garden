@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import {
   getContentBySlug,
   contentSectionPath,
@@ -26,6 +25,11 @@ function badgeLabel(frontmatter: ContentFrontmatter): string | null {
 export function ContentCard({ section, slug, frontmatter, linkLabel = "Read" }: ContentCardProps) {
   const href = `/${contentSectionPath(section)}/${slug}`;
   const badge = badgeLabel(frontmatter);
+  const requestHref = frontmatter.request_email
+    ? `mailto:${frontmatter.request_email}?subject=${encodeURIComponent(
+        `Paper request: ${frontmatter.title}`
+      )}`
+    : null;
 
   return (
     <article className={styles.card}>
@@ -64,6 +68,12 @@ export function ContentCard({ section, slug, frontmatter, linkLabel = "Read" }: 
           >
             <ExternalIcon size={16} className={styles.externalIcon} />
             published version
+          </a>
+        )}
+        {requestHref && (
+          <a href={requestHref} className={styles.externalLink}>
+            <ExternalIcon size={16} className={styles.externalIcon} />
+            request copy
           </a>
         )}
       </div>
