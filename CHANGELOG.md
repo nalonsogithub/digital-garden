@@ -6,6 +6,12 @@ Entries from 2026-07-07 onward were made with Claude Code and are described in
 detail below. Earlier entries predate that workflow and are summarized from
 git history only.
 
+## 2026-07-07 — Surface strategy pages on homepage, add operating-model maturity section, plan research-section cleanup (`cd0ebf0`)
+
+- Homepage now links to all three strategy pages (operating model, cross-vertical strategy, product lifecycle) as visible pills instead of one muted link to just the operating model. `cross-vertical-strategy` previously had zero inbound links anywhere on the site.
+- Added a "How this evolves" section to [content/pages/operating-model.md](content/pages/operating-model.md): the three-phase maturity idea (make existing workflows faster first, let systems retain real outcomes and start looking like they're learning, then get proactive once retained history reaches critical density).
+- Added [docs/research-section-plan.md](docs/research-section-plan.md): audit findings (the 9 peer-reviewed papers are empty frontmatter-only stubs with no external links or real summaries) plus self-contained task specs for a cheaper/faster model to pick up once source material or UX direction is confirmed.
+
 ## 2026-07-07 — Add "From Smooth to Jagged" essay, interactive Mandelbrot explorer, sales-cadence resume stat (`157142f`)
 
 - Added [content/writing/from-smooth-to-jagged.md](content/writing/from-smooth-to-jagged.md), a new essay on the history of the Taylor series, the Fourier transform, stochastic calculus, and fractal geometry, ending with a personal Mandelbrot story tied to reading markets.
