@@ -39,3 +39,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Private opportunity materials and generated application documents
+/opportunities/
+
+# Published journal PDFs (copyrighted) and internal working notes — never publish
+/Publictions/
+/writing_and_work_overview.md
+/docs/Opertingmargin.md
+
+# Local editor/tool state
+/.obsidian/
+
+# Local artifact-rendering scratch space
+/tmp/
