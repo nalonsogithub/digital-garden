@@ -1,0 +1,153 @@
+.wrap {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter,
+.filterActive {
+  min-height: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.3rem 0.7rem;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--foreground);
+  background: var(--background);
+  cursor: pointer;
+}
+
+.filter:hover {
+  border-color: var(--theme-primary);
+  color: var(--theme-primary);
+}
+
+.filterActive {
+  border-color: var(--theme-primary);
+  color: var(--theme-primary);
+  background: var(--theme-primary-subtle);
+  font-weight: 600;
+}
+
+.legend {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.legendHint {
+  margin-left: 0.6rem;
+}
+
+.swatch {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+
+.swatchNote {
+  background: var(--theme-primary-muted);
+}
+
+.swatchEssay {
+  background: var(--foreground);
+}
+
+.swatchTrack {
+  background: var(--theme-primary-subtle);
+  border: 1.5px solid var(--theme-primary);
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--background);
+}
+
+.edge {
+  stroke: var(--border);
+  stroke-width: 1.2;
+}
+
+.edgeDim {
+  stroke: var(--border);
+  stroke-width: 1;
+  opacity: 0.25;
+}
+
+.node {
+  cursor: pointer;
+  outline: none;
+}
+
+.node:focus-visible circle {
+  stroke: var(--theme-primary);
+  stroke-width: 3;
+}
+
+.nodeDim {
+  opacity: 0.25;
+}
+
+.circleSeed {
+  fill: var(--theme-primary-subtle);
+  stroke: var(--theme-primary-muted);
+  stroke-width: 1.5;
+}
+
+.circleGrowing {
+  fill: var(--theme-primary-muted);
+  stroke: var(--theme-primary);
+  stroke-width: 1.5;
+}
+
+.circleEvergreen {
+  fill: var(--theme-primary);
+  stroke: var(--theme-primary-hover);
+  stroke-width: 1.5;
+}
+
+.circleEssay {
+  fill: var(--foreground);
+  stroke: var(--background);
+  stroke-width: 2;
+}
+
+.circleTrack {
+  fill: var(--background);
+  stroke: var(--theme-primary);
+  stroke-width: 2;
+  stroke-dasharray: 3 2;
+}
+
+.label,
+.labelQuiet {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 11px;
+  fill: var(--foreground);
+  pointer-events: none;
+}
+
+.labelQuiet {
+  fill: var(--muted);
+  font-size: 10px;
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}

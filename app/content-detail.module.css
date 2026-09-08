@@ -22,6 +22,16 @@
   color: var(--foreground);
 }
 
+.updated {
+  color: var(--muted);
+}
+
+.trackLine {
+  margin: 0.6rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;

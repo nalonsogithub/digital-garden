@@ -53,3 +53,7 @@ next-env.d.ts
 
 # Local artifact-rendering scratch space
 /tmp/
+
+# Knowledge-base inbox: raw notes awaiting ingest (keep the README)
+/inbox/*
+!/inbox/README.md

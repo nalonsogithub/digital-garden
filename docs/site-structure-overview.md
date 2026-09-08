@@ -25,7 +25,15 @@ This document describes the structure of the **digital-garden** site: a Next.js 
 | `/writing/[slug]` | Single writing detail page (e.g. `/writing/quantum-computing-primer`) |
 | `/cross-vertical-strategy` | Meta-identity page: cross-vertical leverage, integrator model (from `content/pages/cross-vertical-strategy.md`) |
 
-**Redirects:** `/research` and `/research/[slug]` permanently redirect to `/writing` and `/writing/[slug]`.
+| `/notes` | Knowledge base index: full-text search and filters over notes, essays, and tracks (from `content/notes/`) |
+| `/notes/[slug]` | Single note: body with wiki links, sources, "Appears in" (essays), "Links out", "Referenced by", "Related" |
+| `/notes/graph` | Interactive force-directed graph of notes and essays built from `[[wiki-links]]` |
+| `/notes/how-this-works` | Explainer page (from `content/pages/how-the-knowledge-base-works.md`) |
+| `/tracks` | Index of ordered reading paths (from `content/tracks/`) |
+| `/tracks/[slug]` | Single track: intro plus resolved reading order |
+| `/prompts/[slug]` | Reverse-engineered prompt that reconstructs an essay from its notes (from `content/prompts/`) |
+
+**Redirects:** `/writing` and `/writing/[slug]` permanently redirect to `/research` and `/research/[slug]`.
 
 The **slug** in `[slug]` is the Markdown filename without the `.md` extension. Slugs must be **lowercase letters, numbers, and hyphens only** (e.g. `quantum-computing-primer`). The site only discovers files whose base name matches that pattern.
 
@@ -68,11 +76,18 @@ digital-garden/
 │   │   └── experience.json       # Resume entries and bullets (see below)
 │   ├── systems/                  # One .md file per system
 │   │   └── *.md
-│   └── writing/                  # One .md file per writing item (professional + personal)
-│       └── *.md
+│   ├── writing/                  # One .md file per writing item (professional + personal)
+│   │   └── *.md
+│   ├── notes/                    # Knowledge base: one .md per concept / lab / model / hub / question
+│   ├── tracks/                   # Ordered reading paths (frontmatter `sequence`)
+│   ├── prompts/                  # Reverse-engineered prompts that reconstruct essays from notes
+│   └── pages/                    # Standalone pages (operating model, how the knowledge base works, ...)
+│
+├── inbox/                        # Raw notes awaiting ingest (git-ignored; README only is tracked)
 │
 ├── lib/
-│   └── content.ts                # Content helpers: read markdown, parse frontmatter, list by section, get by slug, resume JSON
+│   ├── content.ts                # Content helpers: read markdown, parse frontmatter, list by section, get by slug, resume JSON
+│   └── wiki.ts                   # Wiki layer: [[link]] parsing, resolution, backlinks, graph, search index, tracks
 │
 ├── styles/
 │   └── globals.css               # Global CSS variables and base styles
@@ -174,6 +189,31 @@ Each **bullet** has:
 Resume bullets that have a `link` show the text plus a small link to `/{section}/{slug}`. The `slug` must match an existing Markdown file in that section (e.g. `content/systems/investment-process-demo.md`).
 
 ---
+
+### 4.3 Knowledge base: notes, tracks, prompts
+
+The knowledge base is three more Markdown folders that share the frontmatter parser and add a wiki-link layer (`lib/wiki.ts`).
+
+**Wiki links.** Anywhere in a body (notes, essays, tracks, prompts, pages), `[[slug]]` or `[[slug|display text]]` links to the item with that slug. Resolution order: `content/notes`, then `content/writing`, then `content/systems`, then `content/tracks`. The renderer (`components/markdown-renderer.tsx`) rewrites these to standard links with a CSS-only hover preview (`components/wiki-link.tsx`). A slug that resolves nowhere renders as a dashed "not yet written" marker; that is intentional and marks a gap.
+
+**Notes (`content/notes/*.md`).** Required: `title`, `summary`. Knowledge-base fields:
+
+- `note_type`: `concept` | `lab` | `model` | `hub` | `question`
+- `status`: `seed` | `growing` | `evergreen` (growth stage; shown as a badge and used as a filter)
+- `related`: array of slugs (shown under "Related" if not already linked in the body)
+- `last_reviewed`: ISO date, for perishable subjects; notes older than 120 days are flagged on their page
+- `confidence`: `high` | `medium` | `speculative`, for perishable subjects
+- `sources`: array of `{ title, url?, accessed? }`, rendered as a numbered list
+
+**Tracks (`content/tracks/*.md`).** Required: `title`, `summary`, and `sequence`, an ordered array of `"section:slug"` strings (e.g. `"research:from-smooth-to-jagged"`, `"notes:rough-paths"`). Unresolvable entries are skipped, so a track can reference an essay that does not exist yet.
+
+**Prompts (`content/prompts/*.md`).** Required: `title`, `summary`. Linked from an essay by setting `prompt: "<slug>"` in the essay's frontmatter; the essay page then shows a "how this was written" button.
+
+**Essay additions.** Essays (`content/writing`) accept `updated` (revision date, shown beside the original date), `track` (informational), and `prompt`. Any `[[links]]` in an essay body populate its "Built from" panel and count as edges in the graph.
+
+**Derived data (`lib/wiki.ts`).** `getWikiIndex()` (slug -> target), `getBacklinks(slug)`, `getOutboundLinks(body)`, `getWikiGraph()` (nodes: all notes plus any essay/system/track with an edge), `getSearchIndex()` (notes + essays + tracks with plain-text bodies for client-side search), `resolveSequence()`, `getTracksContaining(slug)`. All run at build time.
+
+**Ingest workflow.** Raw material goes in `/inbox/` (git-ignored, not deployed). The `knowledge-base` skill in `.cursor/skills/knowledge-base/SKILL.md` documents how a drop is routed to a new or existing note and how a published essay is back-propagated into the notes. Nothing is written to `content/notes` without a reviewed diff.
 
 ## 5. How pages use content
 

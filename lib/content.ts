@@ -4,7 +4,19 @@ import matter from "gray-matter";
 
 const contentDir = path.join(process.cwd(), "content");
 
-export type ContentSection = "systems" | "research" | "writing" | "technical-lineage";
+export type ContentSection =
+  | "systems"
+  | "research"
+  | "writing"
+  | "technical-lineage"
+  | "notes"
+  | "tracks"
+  | "prompts";
+
+import type { NoteConfidence, NoteSource, NoteStatus, NoteType } from "./taxonomy";
+
+export type { NoteConfidence, NoteSource, NoteStatus, NoteType } from "./taxonomy";
+export { NOTE_STATUS_LABELS, NOTE_TYPE_LABELS } from "./taxonomy";
 
 /** Primary bucket on the Research index. */
 export type WritingCategory = "research" | "capabilities" | "essays" | "presentations";
@@ -42,6 +54,21 @@ export interface ContentFrontmatter {
   systems_group?: SystemsGroup;
   /** When false, omit from index pages (detail URL still works). Default true. */
   listed?: boolean;
+  /** Date of last substantive revision (essays). */
+  updated?: string;
+  /** Slug of the track this essay belongs to. */
+  track?: string;
+  /** Slug of the prompt (content/prompts) that can regenerate this essay from notes. */
+  prompt?: string;
+  /** Notes only. */
+  note_type?: NoteType;
+  status?: NoteStatus;
+  related?: string[];
+  last_reviewed?: string;
+  confidence?: NoteConfidence;
+  sources?: NoteSource[];
+  /** Tracks only: ordered list of "section:slug" entries (e.g. "research:from-smooth-to-jagged", "notes:rough-paths"). */
+  sequence?: string[];
 }
 
 export interface ContentItem {

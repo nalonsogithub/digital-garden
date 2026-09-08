@@ -1,11 +1,14 @@
 ---
 title: "From Smooth to Jagged"
 date: "2026-07-07"
-summary: "How mathematics grew a new tool each time reality posed a problem the existing math could not solve, from Taylor series to the Fourier transform, stochastic calculus, and fractal geometry, ending with a personal encounter with Benoit Mandelbrot and its bearing on reading markets."
+updated: "2026-09-08"
+summary: "How mathematics grew a new tool each time reality posed a problem the existing math could not solve, from Taylor series to the Fourier transform, stochastic calculus, fractal geometry, and rough paths, ending with a personal encounter with Benoit Mandelbrot and its bearing on reading markets."
 pdf: "/papers/from-smooth-to-jagged.docx"
 tags: ["mathematics", "physics", "fractals", "stochastic calculus", "writing"]
 category: "essays"
 content_type: "essay"
+track: "derived-borrowed-learned"
+prompt: "from-smooth-to-jagged"
 ---
 
 From Smooth to Jagged
@@ -26,7 +29,7 @@ It ends with a personal story. Years ago I wrote a letter to a mathematician lis
 
 ## II. The Taylor Series: Predicting the Curve
 
-Classical calculus assumes a smooth world, and in a smooth world the Taylor series is the ultimate predictive engine. Its claim is bold: if you know everything about a single point on a well-behaved curve, every derivative, layer by layer, you can reconstruct the entire curve from that one point.
+Classical calculus assumes a smooth world, and in a smooth world the [[taylor-series|Taylor series]] is the ultimate predictive engine [1]. Its claim is bold: if you know everything about a single point on a well-behaved curve, every derivative, layer by layer, you can reconstruct the entire curve from that one point.
 
 The layers of change. In physics the derivatives form a kinematic sequence, each one a deeper layer of how motion changes. Position tells you where the object is; velocity, how position changes. Acceleration is the change in velocity, and the third derivative, jerk, is the change in acceleration. Jerk is the one you feel as the sudden snap of your neck when a driver stomps the brakes. Engineers even name the fourth derivative (snap) and design around it: elevator and roller coaster designers explicitly limit jerk and snap because the human inner ear feels those layers, not speed itself. A well-tuned elevator is a Taylor series you can ride.
 
@@ -48,7 +51,7 @@ The differential equation underneath. Why did the series exist at all? Because m
 
 ## III. The Fourier Transform: Un-blending Chaos
 
-Where calculus studies smooth curves, Fourier analysis attacks messy aggregates and un-blends them. Its claim: essentially any physically realistic signal, however chaotic it looks, can be rebuilt by adding together simple, endlessly repeating sine and cosine waves.
+Where calculus studies smooth curves, [[fourier-transform|Fourier analysis]] attacks messy aggregates and un-blends them. Its claim: essentially any physically realistic signal, however chaotic it looks, can be rebuilt by adding together simple, endlessly repeating sine and cosine waves.
 
 Two ways of seeing. The time domain is the chronological shape of a signal, the physical wiggle of a guitar string over one second. The frequency domain is the ingredients list: it ignores when things happened and reveals which pure notes exist inside the noise, and how loudly. Same information, two languages.
 
@@ -62,17 +65,17 @@ X(f) = ∫ x(t) e^(−i2πft) dt,  integrated over all t
 
 You are running one right now. The best example is not in a lab. The cochlea in your inner ear is a physical Fourier transform: a coiled strip in which each position resonates with one frequency. When a chord reaches your ear as a single mangled pressure wave, the cochlea splits it back into notes before your brain ever gets involved. That is why you can pick a single voice out of a crowded room, and it is the same decomposition running inside noise-canceling headphones and song-recognition apps.
 
-The man nobody believed. Joseph Fourier went to Egypt with Napoleon, came home obsessed with heat, and in 1807 presented a memoir claiming any temperature profile could be built from waves. Lagrange and Laplace, the two most powerful mathematicians alive, found the claim absurd, and publication was effectively held up for years. Fourier kept going, publishing his full theory in 1822 [3]. He was right, and it took the field decades of work, including the discovery of strange wrinkles like the Gibbs phenomenon at sharp edges, to establish just how right.
+The man nobody believed. Joseph Fourier went to Egypt with Napoleon, came home obsessed with heat, and in 1807 presented a memoir claiming any temperature profile could be built from waves. Lagrange, the most powerful mathematician alive, rejected the claim outright; Laplace was skeptical, though he later came around. Publication was effectively held up for years. Fourier kept going, publishing his full theory in 1822 [3]. He was right, and it took the field decades of work, including the discovery of strange wrinkles like the Gibbs phenomenon at sharp edges, to establish just how right.
 
 The differential equation underneath. Fourier did not invent his series as abstract mathematics. He built them for one purpose: to solve the heat equation, the partial differential equation governing how temperature spreads through a solid. The waves were the only shapes the equation treated simply, so he expressed everything else in terms of them. Reality posed the equation; the transform was the limb that reached it.
 
-A bridge to another paper in this library: Shor's algorithm, the quantum method for breaking RSA encryption, is at its heart a Quantum Fourier Transform hunting for the period of a function. The same idea, un-blend the chaos and read off the frequency, does the work in both worlds.
+A bridge to another paper in this library: [[shor-and-the-quantum-fourier-transform|Shor's algorithm]], the quantum method for breaking RSA encryption described in [[the-resolution-of-reality|The Resolution of Reality]], is at its heart a Quantum Fourier Transform hunting for the period of a function. The same idea, un-blend the chaos and read off the frequency, does the work in both worlds.
 
 ## IV. Stochastic Calculus: Modeling the Jagged Edge
 
 Everything so far assumes the curve is smooth enough to differentiate. In 1827 the botanist Robert Brown looked through his microscope at pollen grains suspended in water and watched them jitter, endlessly and without cause [4]. No one could explain it for nearly eighty years, until Einstein showed in 1905 that the jitter was the statistical signature of invisible molecules colliding with the grains, an argument so quantitative it effectively settled the existence of atoms [5].
 
-The path that broke calculus. A Brownian path is continuous but so jagged that it has no derivative anywhere. Zoom in and it never smooths out; there is no velocity to speak of. Ordinary differential equations simply break on such paths. Standard calculus builds on dx and dt, infinitesimal steps in space and time. Stochastic calculus adds a third object, dW, the increment of a Wiener process, which is a formalized random shock. Kiyosi Itô worked out the rules for this new object in the 1940s [7], and his lemma, the stochastic chain rule, is the bridge that lets calculus survive contact with randomness:
+The path that broke calculus. A [[brownian-motion-and-ito-calculus|Brownian path]] is continuous but so jagged that it has no derivative anywhere. Zoom in and it never smooths out; there is no velocity to speak of. Ordinary differential equations simply break on such paths. Standard calculus builds on dx and dt, infinitesimal steps in space and time. Stochastic calculus adds a third object, dW, the increment of a Wiener process, which is a formalized random shock. Kiyosi Itô worked out the rules for this new object in the 1940s [7], and his lemma, the stochastic chain rule, is the bridge that lets calculus survive contact with randomness:
 
 df = ( ∂f/∂t + μ ∂f/∂x + ½σ² ∂²f/∂x² ) dt + σ (∂f/∂x) dW
 
@@ -82,7 +85,7 @@ The dt term is the deterministic drift, the direction the system is trying to go
 
 *Figure 3. Why a new calculus. Magnify a smooth curve and it flattens into a straight line, which is what a derivative is. Magnify a Brownian path and it stays exactly as jagged, at every scale, forever. There is no line to find, so ordinary calculus has nothing to grip.*
 
-The graduate student who was too early. Here is the part your finance colleagues rarely hear. In 1900, five years before Einstein's paper, a doctoral student in Paris named Louis Bachelier wrote down the random walk model, not for pollen but for prices on the Paris Bourse [6]. His thesis, Théorie de la Spéculation, contained the mathematics of Brownian motion before physics had it. It was politely graded and thoroughly ignored for half a century, until the statistician Jimmie Savage mailed postcards to a list of economists asking whether anyone had heard of this Bachelier. Paul Samuelson found the thesis in the MIT library, and modern quantitative finance fell out of it: Itô's calculus applied to Bachelier's idea yields the Black-Scholes equation that prices options today [8].
+The graduate student who was too early. Here is the part your finance colleagues rarely hear. In 1900, five years before Einstein's paper, a doctoral student in Paris named Louis Bachelier wrote down the random walk model, not for pollen but for prices on the Paris Bourse [6]. His thesis, Théorie de la Spéculation, contained the mathematics of Brownian motion before physics had it. It received the grade *honorable* rather than the *très honorable* that opened academic doors, and it was largely ignored for half a century, until the statistician Jimmie Savage mailed postcards to a list of economists asking whether anyone had heard of this Bachelier. Paul Samuelson found the thesis in the MIT library, and modern quantitative finance fell out of it: Itô's calculus applied to Bachelier's idea yields the Black-Scholes equation that prices options today [8].
 
 The differential equation underneath. Black-Scholes is itself a differential equation, but of the new kind: a stochastic one, an SDE rather than an ODE. Reality's jaggedness did not just resist the old equations; it forced an entirely new species of them into existence. That is the pattern of this paper repeating: the tool is born the moment the old mathematics fails.
 
@@ -96,7 +99,7 @@ The equation. His most famous object comes from iterating one line of algebra on
 
 zₙ₊₁ = zₙ² + c
 
-For each starting point c, one of two fates unfolds: the sequence stays bounded forever, sometimes settling to a point, sometimes cycling, sometimes wandering without escape, or it flies off to infinity. The Mandelbrot set is the collection of points that stay home. Its boundary, the infinitely intricate filigree between staying and escaping, is where the fractal lives: an edge so sensitive that two starting points closer than any measurement can distinguish end up with opposite destinies.
+For each starting point c, one of two fates unfolds: the sequence stays bounded forever, sometimes settling to a point, sometimes cycling, sometimes wandering without escape, or it flies off to infinity. The [[mandelbrot-set|Mandelbrot set]] is the collection of points that stay home. Its boundary, the infinitely intricate filigree between staying and escaping, is where the fractal lives: an edge so sensitive that two starting points closer than any measurement can distinguish end up with opposite destinies.
 
 <!-- interactive:mandelbrot -->
 
@@ -108,13 +111,19 @@ The differential equation underneath. An iterated map like z² + c is the discre
 
 Now the story from the introduction. Years ago, after moving to Boston, I looked up Benoit Mandelbrot and found him listed on the Yale faculty. I was headed to New Haven and wrote to ask whether I could meet him. His reply surprised me twice: he was not in New Haven at all, he lived in Cambridge, and when I returned we could meet for coffee. I have long since lost the correspondence, but I remember its substance clearly. He was in the last stretch of his life, and he passed away soon after. The coffee never happened.
 
-The reading I did to prepare for a meeting that never came did the work instead. His book on markets, and Fractals and Scaling in Finance [11][12], materially changed how I look at equity markets. Markets have never seemed random to me, exactly, but they have never seemed measurable by our standard tools either. Mandelbrot gave that intuition a precise form. A pure random walk, the assumption buried inside Bachelier, Black-Scholes, and most of the modern toolkit, traces a path with fractal dimension of exactly 1.5 and politely thin tails. Mandelbrot's claim was that real price series live at some other roughness. Volatility clusters, calm begets calm, wildness begets wildness, and the pattern looks the same on a one-minute chart as on a decade chart, a structure he measured with what is now called the Hurst exponent [13]. When markets produce moves the standard models call impossible, it is not because reality misbehaved. It is because we measured a fractional object with integer tools.
+The reading I did to prepare for a meeting that never came did the work instead. His book on markets, and Fractals and Scaling in Finance [11][12], materially changed how I look at equity markets. Markets have never seemed random to me, exactly, but they have never seemed measurable by our standard tools either. Mandelbrot gave that intuition a precise form. A pure random walk, the assumption buried inside Bachelier, Black-Scholes, and most of the modern toolkit, traces a path with fractal dimension of exactly 1.5 and politely thin tails. Mandelbrot's claim was that real price series live at some other roughness. Volatility clusters, calm begets calm, wildness begets wildness, and the pattern looks the same on a one-minute chart as on a decade chart, a structure he measured with what is now called the [[hurst-exponent-and-fractal-dimension|Hurst exponent]] [13]. The two measurements are the same measurement: for a path of this kind the fractal dimension is D = 2 − H, so the random walk's H of 0.5 is exactly its dimension of 1.5, and any other H is a path of another roughness. When markets produce moves the standard models call impossible, it is not because reality misbehaved. It is because we measured a fractional object with integer tools.
 
 ![Figure 5. Three roughnesses.](/images/from-smooth-to-jagged/figure-5-hurst-exponent.png)
 
 *Figure 5. Three roughnesses. Simulated price paths at three Hurst exponents. The middle panel is the pure random walk assumed by the standard toolkit, with fractal dimension exactly 1.5. Real markets live at some other roughness, and the difference is measurable.*
 
-That is the thesis of this whole paper, arriving in person. Reality posed equations; mathematics grew limbs to reach them, from smooth Taylor expansions to the heat equation's waves, to a calculus for jagged paths, to a geometry for objects between dimensions. The last limb is the one I now use every working day. I never got the coffee, but I got the lens.
+The pattern has not stopped. If a price path really has H ≠ 0.5, then Itô's calculus, the tool of Section IV, no longer applies to it. Itô's extra term exists because the squared increment of a Brownian path scales like dt; for a path with Hurst exponent H it scales like dt^2H, which vanishes when H > 0.5 and blows up when H < 0.5. Worse, for any H ≠ 0.5 the path is not a semimartingale, so the probabilistic definition of the stochastic integral fails as well. Reality posed the equation again, and the answer came in 1998 from Terry Lyons: [[rough-paths|rough path theory]] [14]. Lyons's observation was that a rough path alone does not determine the integrals along it; two paths identical at every point can give different answers, because what matters is also how the path winds between the points. So he enriched the path with its iterated integrals, as many orders as the roughness demands, and showed that once that data is supplied the solution of a differential equation driven by the path becomes well defined and continuous, with no probability required. The full tower of iterated integrals is called the path's signature, and it has since become a working tool in machine learning as well as finance. The Taylor series began this paper by reconstructing a smooth curve from its derivatives at a point. Rough path theory reconstructs what can be done with a jagged path from its iterated integrals. It is the same idea, rebuilt for a world without derivatives.
+
+Mandelbrot's claim was eventually measured. In 2018 Gatheral, Jaisson, and Rosenbaum estimated the Hurst exponent of realized volatility across many markets and found values near 0.1, far rougher than a Brownian path [15]. [[rough-volatility|Rough volatility]] models built on that finding are now an active area of quantitative finance, and they require exactly the mathematics above.
+
+That is the thesis of this whole paper, arriving in person. Reality posed equations; mathematics grew limbs to reach them, from smooth Taylor expansions to the heat equation's waves, to a calculus for jagged paths, to a geometry for objects between dimensions, to a calculus for paths of arbitrary roughness. The last limb is the one I now use every working day. I never got the coffee, but I got the lens.
+
+One difference with the companion essay in this library is worth stating plainly. [[the-resolution-of-reality|The Resolution of Reality]] ends with quantum simulation, where the modeling step nearly disappears because the computer and the molecule obey the same physics. Markets have no such substrate. There is no physical system that behaves like a market and can be run forward, so for markets the path has so far been better mathematics rather than a machine that is the market. Whether that changes is an open question, and it belongs to a third essay, [[from-prediction-to-agency|From Prediction to Agency]].
 
 ## References
 
@@ -131,3 +140,5 @@ That is the thesis of this whole paper, arriving in person. Reality posed equati
 - [11] Mandelbrot, B., & Hudson, R. L. (2004). *The (Mis)Behavior of Markets: A Fractal View of Risk, Ruin, and Reward*. Basic Books, New York.
 - [12] Mandelbrot, B. (1997). *Fractals and Scaling in Finance: Discontinuity, Concentration, Risk*. Springer, New York.
 - [13] Hurst, H. E. (1951). "Long-Term Storage Capacity of Reservoirs." *Transactions of the American Society of Civil Engineers*, 116, 770-799.
+- [14] Lyons, T. J. (1998). "Differential equations driven by rough signals." *Revista Matemática Iberoamericana*, 14(2), 215-310.
+- [15] Gatheral, J., Jaisson, T., & Rosenbaum, M. (2018). "Volatility is rough." *Quantitative Finance*, 18(6), 933-949.

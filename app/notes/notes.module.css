@@ -1,0 +1,114 @@
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: -0.25rem 0 1.5rem;
+}
+
+.toolLink,
+.toolLinkQuiet {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.toolLink:hover,
+.toolLinkQuiet:hover {
+  border-color: var(--theme-primary);
+  text-decoration: none;
+}
+
+.toolLinkQuiet {
+  color: var(--muted);
+  border-style: dashed;
+}
+
+.detailMeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  margin: 0.25rem 0 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.statusPill {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.status_growing {
+  color: var(--theme-primary);
+  border-color: var(--theme-primary);
+}
+
+.status_evergreen {
+  color: var(--background);
+  background: var(--theme-primary);
+  border-color: var(--theme-primary);
+}
+
+.typeLabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--theme-primary);
+}
+
+.stale {
+  color: #b45309;
+}
+
+.statusNote {
+  margin: 0.75rem 0 0;
+  padding: 0.6rem 0.85rem;
+  border-left: 3px solid var(--border);
+  font-size: 0.88rem;
+  color: var(--muted);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.sourcesSection {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.sourcesTitle {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.sources {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.88rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.sourceAccessed {
+  color: var(--muted);
+}
+
+.graphIntro {
+  margin: -0.5rem 0 1rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+  max-width: 44rem;
+}

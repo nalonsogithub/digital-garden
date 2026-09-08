@@ -6,4 +6,5 @@ export { SearchIcon } from "./search-icon";
 export { PenIcon } from "./pen-icon";
 export { ExternalIcon } from "./external-icon";
 export { DownloadIcon } from "./download-icon";
+export { NetworkIcon } from "./network-icon";
 export type { IconProps } from "./icon-props";

@@ -6,6 +6,16 @@ Entries from 2026-07-07 onward were made with Claude Code and are described in
 detail below. Earlier entries predate that workflow and are summarized from
 git history only.
 
+## 2026-09-08 — Knowledge base: notes layer, wiki links, graph, tracks, prompts, and a third essay
+
+- Added a notes layer (`content/notes/`, 27 notes) with growth stages (`seed`/`growing`/`evergreen`), note types, `last_reviewed` and `confidence` for perishable subjects, and per-note sources. Nineteen concept notes seeded from the two essays (the four appendices of the quantum paper became notes); eight lab/model notes (Anthropic, OpenAI, Google DeepMind, xAI, Chinese labs, world models, Atlas, and a landscape hub) researched against current primary sources and dated.
+- Added `[[wiki-link]]` rendering with CSS-only hover previews, backlinks ("Referenced by", "Appears in"), a "Built from" panel on essays, a searchable `/notes` index (full-text, filters by kind, type, stage), a force-directed `/notes/graph`, and dashed markers for links to notes not yet written. New `lib/wiki.ts`; client-safe labels moved to `lib/taxonomy.ts`. No new dependencies.
+- Added tracks (`/tracks`, ordered reading paths) and prompts (`/prompts/[slug]`, reverse-engineered prompts that reconstruct each essay from its notes; linked from essays via "how this was written").
+- Revised *The Resolution of Reality*: seven redrawn figures in the shared matplotlib style; Section II rewritten (removed the transistor "fill and drain" mechanism, reframed Bitcoin as a no-structure preview); Section VII now separates Shor's period-finding lens from the molecule's energy-minimization lens; Section VIII softens logistics/finance claims with the Babbush et al. (2021) caveat and adds the isomorphic/structural/generic gradient with analog and isomorphism named; fixed `10^80`/`10^617` exponents; added references and a closing paragraph scoped to physical systems that points to the mathematics essay.
+- Revised *From Smooth to Jagged*: Taylor citation, Laplace and Bachelier claims softened to what the record supports, `D = 2 − H` identity, a rough path theory paragraph (Lyons 1998) as the fifth tool, rough volatility (Gatheral, Jaisson, Rosenbaum 2018) as Mandelbrot measured, and a plain statement of how markets differ from the quantum case.
+- Added a draft third essay, *From Prediction to Agency*, on frontier language models: each stage answered a limit hit by the previous one; ends with LLM-agent market simulations (what was shown and what was not) and reflexivity as the ceiling on the analogy to quantum simulation. Written from a sourced research brief; perishable facts live in the linked notes.
+- Added `/inbox` (git-ignored) and a `knowledge-base` skill documenting the ingest workflow (route raw notes to a new or existing note, propose a diff) and the back-propagation workflow (essay to notes). Added `notes` to the site nav and an explainer at `/notes/how-this-works`. Documented all of it in `docs/site-structure-overview.md`.
+
 ## 2026-07-07 — Trim setup line and unverified growth claim from Sales AI Platform page (`fe968fb`)
 
 - Removed the "question is not whether AI can write faster" throat-clearing opener from Strategic value; the substantive sentence now stands on its own.

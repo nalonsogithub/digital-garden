@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { HomeIcon, DocumentIcon, FolderIcon, PenIcon } from "@/components/icons";
+import { HomeIcon, DocumentIcon, FolderIcon, PenIcon, NetworkIcon } from "@/components/icons";
 import styles from "./site-nav.module.css";
 
 const navItems = [
@@ -10,6 +10,7 @@ const navItems = [
   { href: "/resume", label: "resume", Icon: DocumentIcon, exact: false },
   { href: "/research", label: "research", Icon: PenIcon, exact: false },
   { href: "/systems", label: "platforms", Icon: FolderIcon, exact: false },
+  { href: "/notes", label: "notes", Icon: NetworkIcon, exact: false },
 ] as const;
 
 export function SiteNav() {
