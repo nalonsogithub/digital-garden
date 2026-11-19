@@ -11,9 +11,17 @@ const maintenancePage = `<!doctype html>
     main { max-width: 36rem; padding: 2rem; }
     p { margin: 0 0 1rem; font: 500 1rem/1.5 system-ui, sans-serif; }
     h1 { margin: 0; font: normal clamp(2.5rem, 7vw, 4.5rem)/1.1 Georgia, serif; }
+    address { margin-top: 1.75rem; font: 1rem/1.5 system-ui, sans-serif; }
+    a { color: inherit; text-underline-offset: 0.2em; }
   </style>
 </head>
-<body><main><p>Nicholas Alonso, CFA</p><h1>Under construction</h1></main></body>
+<body>
+  <main>
+    <p>Nicholas Alonso, CFA</p>
+    <h1>Under construction</h1>
+    <address><a href="mailto:nick.alonso@gmail.com">nick.alonso@gmail.com</a></address>
+  </main>
+</body>
 </html>`;
 
 export function proxy() {
